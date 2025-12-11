@@ -2,11 +2,11 @@
 #define VIDEO_H
 
 #include "common.h"
-#include "LIBCD.H"
-#include "psyq_3_0_missing/LIBCD.H"
-#include "LIBPRESS.H"
-#include "psyq_3_0_missing/LIBPRESS.H"
-#include "draw/fade.h"
+#include <libcd.h>
+// #include "psyq_3_0_missing/LIBCD.H"
+#include <libpress.h>
+// #include "psyq_3_0_missing/LIBPRESS.H"
+#include <draw/fade.h>
 
 typedef s16 Video;
 #define VIDEO_NONE 0

@@ -40,7 +40,19 @@ Unk_801f62a0 pile_snd[10];
 s16 pt_pile_snd;
 SndFileInfo *D_801D7840;
 #endif
-
+extern short SsUtKeyOn(short, short, short, short, short, short, short);
+extern short SsIsEos(short, short);
+extern void  SsSepStop(short, short);
+extern void  SsUtReverbOff(void);
+extern short SsVabOpenHead(unsigned char*, short);
+extern short SsSepOpen(unsigned long*, short, short);
+extern void  SsSepClose(short);
+extern void  SsSepSetVol(short, short, short, short);
+extern void  SsSeqCalledTbyT(void);           
+extern void  SsSepPlay(short, short, char, short);
+#define SSPLAY_PLAY 1
+extern void  SsUtAllKeyOff(short);
+extern short SsUtKeyOff(short, short, short, short, short);
 /* 41084 80165884 -O2 -msoft-float */
 void PS1_StopPlayingAllSnd(void)
 {
@@ -115,7 +127,7 @@ void PS1_LoadAllFixSound(void)
 
             PS1_AllFix_SepAcc = 0;
             if (PS1_AllFix_Sep_VabId != -1)
-                PS1_AllFix_SepAcc = SsSepOpen(&((u8 *) file_info)[file_info->seq_offs], PS1_AllFix_Sep_VabId, D_801C7C78[0]);
+                PS1_AllFix_SepAcc = SsSepOpen(&((u_long *) file_info)[file_info->seq_offs], PS1_AllFix_Sep_VabId, D_801C7C78[0]);
         }
         SsUtReverbOn();
         LOAD_CONFIG();
@@ -125,6 +137,8 @@ void PS1_LoadAllFixSound(void)
         D_801CEFDC = 1;
     }
 }
+extern void  SsVabClose(short);          
+extern void  SsEnd(void);
 
 /* 4145C 80165C5C -O2 -msoft-float */
 void PS1_LoadWorldSound(s16 param_1)
@@ -154,7 +168,7 @@ void PS1_LoadWorldSound(s16 param_1)
         PS1_World_SepAcc = 1;
         SsSepClose(PS1_World_SepAcc);
         PS1_World_SepAcc = SsSepOpen(
-            &((u8 *) unk_1)[unk_1->seq_offs],
+            &((u_long *) unk_1)[unk_1->seq_offs],
             PS1_World_Sep_VabId,
             D_801C7C78[param_1]
         );
@@ -591,6 +605,8 @@ score of ???
 attempts: 3
 had m2c gotos-only in nonmatchings_ours in git history
 */
+
+
 void PlaySnd(short snd, short obj_id)
 {
     u8 bVar1;

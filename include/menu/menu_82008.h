@@ -2,7 +2,7 @@
 #define MENU_82008_H
 
 #include "common.h"
-#include "psyq_3_0_missing/STRINGS.H"
+#include <string.h>
 #include "menu/menu_7EEE4.h"
 #include "menu/menu_7F4B4.h"
 

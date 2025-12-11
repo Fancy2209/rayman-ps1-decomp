@@ -4,9 +4,9 @@
 #include "common.h"
 #include "common/fileinfo.h"
 #include "common/world_map.h"
-#include "LIBSND.H"
-#include "STDIO.H"
-#include "psyq_3_0_missing/LIBETC.H"
+#include <libsnd.h>
+#include <stdio.h>
+// #include "psyq_3_0_missing/LIBETC.H"
 
 /* .data */
 extern u8 *D_801CEEEC;

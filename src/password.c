@@ -740,7 +740,7 @@ void PS1_GenerateAndDisplayPassword(void)
     if (PS1_IsPasswordValid == true)
         pass[20] = '\0';
     sprintf(pass_cen, s_s_801cf110, pass);
-    strcpy(text_to_display[0].text, pass_cen);
+    strcpy((char *)text_to_display[0].text, (const char *)pass_cen);
 }
 #endif
 

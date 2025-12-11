@@ -218,8 +218,8 @@ s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files)
     s32 unk_1;
     s32 unk_2;
 
-    strcpy(filename, name_start);
-    strcat(filename, s__801cf02c);
+    strcpy((char *)filename, (const char *)name_start);
+    strcat((char *)filename, (const char *)s__801cf02c);
 
     switch (PS1_TestCard(0))
     {
@@ -288,8 +288,8 @@ s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files)
     struct DIRENTRY *var_s0;
     u16 test_1;
 
-    strcpy(sp10, name_start);
-    strcat(sp10, s__801cf02c);
+    strcpy((char *)sp10, (const char *)name_start);
+    strcat((char *)sp10, (const char *)s__801cf02c);
 
     switch (PS1_TestCard(0))
     {
@@ -605,6 +605,9 @@ u8 *FUN_8016b2e8(u8 param_1, u8 param_2, u8 *param_3)
 }
 
 /* 46BFC 8016B3FC -O2 -msoft-float */
+#ifndef delete
+#define delete erase
+#endif
 s32 SaveGameOnDisk(u8 slot)
 {
     u8 filename[32];
@@ -613,10 +616,10 @@ s32 SaveGameOnDisk(u8 slot)
     if (res != 0)
     {
         PS1_CheckCardChanged();
-        strcpy(filename, PS1_SaveFilenames[slot - 1]);
+        strcpy((char *)filename, (const char *)PS1_SaveFilenames[slot - 1]);
         if (filename[0] != '\0')
             delete (filename);
-        strncpy(&PS1_SaveFilenames[slot - 1][17], save_ray[slot], 3);
+        strncpy((char *)&PS1_SaveFilenames[slot - 1][17], (const char *)save_ray[slot], 3);
         res = (u8) PS1_WriteSave(0, slot);
     }
     return res;

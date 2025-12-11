@@ -1,13 +1,19 @@
 #ifndef CARD_H
 #define CARD_H
 
+#include <psyz.h>
 #include "common.h"
 #include "common/rayevts.h"
-#include "KERNEL.H"
-#include "SYS/FILE.H"
+#include <kernel.h>
+#include <sys/file.h>
 #include "menu/menu_7F4B4.h"
 #include "input_ED20.h"
 #include "save.h"
+#include <string.h>
+#include <stdio.h>
+#include <libapi.h>
+#include <libetc.h>
+
 
 typedef struct CardFrame0
 {

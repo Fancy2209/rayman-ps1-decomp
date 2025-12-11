@@ -3,7 +3,7 @@
 
 #include "common.h"
 #include "common/fileinfo.h"
-#include "LIBGPU.H"
+#include <libgpu.h>
 #include "loading_DA64.h"
 #include "loading_tex.h"
 #include "sound.h"

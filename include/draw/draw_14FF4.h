@@ -4,9 +4,8 @@
 #include "common.h"
 #include "common/obj.h"
 #include "common/display.h"
-#include "LIBGTE.H"
-#include "RAND.H"
-#include "psyq_3_0_missing/RAND.H"
+#include "libgte.h"
+#include <stdlib.h>
 #include "main_moteur.h"
 #include "snow.h"
 #include "collision/proj.h"

@@ -1,4 +1,6 @@
 #include "first_init.h"
+extern void  SsInit(void);
+extern long StartPAD(void);
 
 const u8 s_loading_8012c368[] = "/loading.../";
 
@@ -68,7 +70,7 @@ void FUN_8019fa94(u8 param_1)
     RECT fb_rect;
 
     __builtin_memcpy(&fb_rect, &D_801CF0E8, sizeof(D_801CF0E8));
-    StoreImage(&fb_rect, D_801C438C[num_world - 1]);
+    StoreImage(&fb_rect, (u_long*)D_801C438C[num_world - 1]);
     MoveImage(&PS1_CurrentDisplay->field0_0x0.disp, fb_rect.x, fb_rect.y);
     DrawSync(0);
     if (param_1)
@@ -76,7 +78,7 @@ void FUN_8019fa94(u8 param_1)
         FUN_8012d2b0(0);
         SYNCHRO_LOOP(PS1_RollUpRToL);
     }
-    LoadImage(&fb_rect, D_801C438C[num_world - 1]);
+    LoadImage(&fb_rect, (u_long *) D_801C438C[num_world - 1]);
     DrawSync(0);
 }
 
@@ -91,7 +93,7 @@ void FUN_8019fb84(void)
     __builtin_memcpy(&fb_rect_1, &D_801CF0E8, sizeof(D_801CF0E8));
     D_801F4380 = ((u8 *) D_801C438C[num_world - 1] + 0x45000);
     FUN_8019df1c(num_world_choice);
-    StoreImage(&fb_rect_1, D_801C438C[num_world - 1]);
+    StoreImage(&fb_rect_1, (u_long*)D_801C438C[num_world - 1]);
     MoveImage(&PS1_CurrentDisplay->field0_0x0.disp, fb_rect_1.x, fb_rect_1.y);
     DrawSync(0);
     FUN_8012d2b0(0);
@@ -101,11 +103,11 @@ void FUN_8019fb84(void)
     fb_rect_2.y = (SCREEN_HEIGHT - plan2_height) / 2;
     fb_rect_2.w = plan2_width;
     fb_rect_2.h = plan2_height;
-    LoadImage(&fb_rect_2, (u32 *) D_801F4380);
+    LoadImage(&fb_rect_2, (u_long *) D_801F4380);
     DrawSync(0);
     FUN_8012d2b0(100);
     SYNCHRO_LOOP(PS1_RollUpLToR);
-    LoadImage(&fb_rect_1, D_801C438C[num_world - 1]);
+    LoadImage(&fb_rect_1, (u_long *) D_801C438C[num_world - 1]);
     DrawSync(0);
     D_801F4380 = unk_1;
 }

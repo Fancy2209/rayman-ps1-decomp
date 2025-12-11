@@ -307,7 +307,7 @@ s16 saisie_nom_prg(void)
         if (MENU_RETURN)
         {
             if (action == 1)
-                strcpy(save_ray[fichier_selectionne], &D_801F7F68);
+                strcpy((char *)save_ray[fichier_selectionne], (const char *)&D_801F7F68);
             else
                 save_ray[fichier_selectionne][0] = s__801cf120[0];
         }
@@ -408,7 +408,7 @@ void AFFICHE_ECRAN_SAVE(void)
                     D_801F5448 == 0
                 )
                 {
-                    strcpy(save_ray_cpy, save_ray[cur_save + 1]);
+                    strcpy((char *)save_ray_cpy, (const char *)save_ray[cur_save + 1]);
                     save_ray_cpy[cur_char] = 0;
                     prev_char = save_ray_cpy[cur_char - 1];
                     if (prev_char == '~')
@@ -868,8 +868,8 @@ void REALISATION_ACTION(void)
             if (should_load)
             {
                 fichier_selectionne = positiony;
-                strcpy(D_801F7F68, save_ray[positiony]);
-                strcpy(save_ray[fichier_selectionne], save_ray[fichier_a_copier]);
+                strcpy((char *)D_801F7F68, (const char *)save_ray[positiony]);
+                strcpy((char *)save_ray[fichier_selectionne], (const char *)save_ray[fichier_a_copier]);
                 /* ??? */
                 loadInfoRay[fichier_selectionne - 1].num_lives = loadInfoRay[fichier_a_copier - 1].num_lives;
                 loadInfoRay[fichier_selectionne - 1].num_wiz = loadInfoRay[fichier_a_copier - 1].num_wiz;

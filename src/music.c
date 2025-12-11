@@ -73,6 +73,16 @@ CdlLOC D_801E4EF8;
 s32 D_801F4FA0;
 s16 D_801FA570;
 #endif
+#include <libsnd.h>
+typedef void (*SsMarkCallbackProc)(short, short, short);
+extern void  SsVabClose(short);          
+extern void  SsEnd(void);
+extern short SsIsEos(short, short);
+extern void  SsSetMarkCallback(short, short, SsMarkCallbackProc);
+extern void  SsSeqPlay(short, char, short);    
+extern void  SsSeqSetVol(short, short, short);  
+extern void  SsSeqSetCrescendo(short, short, long); 
+#define SSPLAY_PLAY 1
 
 /* B848 80130048 -O2 -msoft-float */
 void FUN_80130048(void)
@@ -88,7 +98,7 @@ void FUN_80130048(void)
 }
 
 /* B8AC 801300AC -O2 -msoft-float */
-void PS1_CdReadyCallback(s32 status, u8 *result)
+void PS1_CdReadyCallback(u_char status, u_char *result)
 {
     PS1_Music_intr_datar = status;
     switch (status)
@@ -139,7 +149,7 @@ void PS1_CdReadyCallback(s32 status, u8 *result)
 }
 
 /* BB6C 8013036C -O2 -msoft-float */
-void PS1_CdSyncCallback(s32 status, u8 *result)
+void PS1_CdSyncCallback(u_char status, u_char *result)
 {
     PS1_Music_Complete_data++;
     PS1_Music_intr_compl = status;
@@ -840,5 +850,5 @@ void FUN_801321fc(void)
 /* DA44 80132244 -O2 -msoft-float */
 void FUN_80132244(void)
 {
-    exit();
+    exit(0);
 }

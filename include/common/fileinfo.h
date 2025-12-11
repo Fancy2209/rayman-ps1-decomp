@@ -2,7 +2,7 @@
 #define FILEINFO_H
 
 #include "common.h"
-#include "LIBCD.H"
+#include <libcd.h>
 
 typedef struct FileInfo
 {

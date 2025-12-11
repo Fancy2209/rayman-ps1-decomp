@@ -2,8 +2,9 @@
 #define FOND_10B3C_H
 
 #include "common.h"
-#include "LIBGPU.H"
-#include "MEMORY.H"
+#include <libgpu.h>
+#include <string.h>
+#include <strings.h>
 #include "common/display.h"
 #include "common/obj.h"
 #include "common/rayconst.h"

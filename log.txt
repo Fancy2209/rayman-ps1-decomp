@@ -1,0 +1,1919 @@
+[0/2] Re-checking globbed directories...
+[1/256] Building C object CMakeFiles/rayman.dir/src/data/bonus_AAE20.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_343EC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/bonus_AAE20.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/corde.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_343EC.h:9:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[2/256] Building C object CMakeFiles/rayman.dir/src/continue.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/fond_5BD8C.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/continue.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/continue.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/unknown/2539C.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[3/256] Building C object CMakeFiles/rayman.dir/src/cam_scroll_29B5C.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/bit_util.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cam_scroll_29B5C.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/cam_scroll_29B5C.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[4/256] Building C object CMakeFiles/rayman.dir/src/cam_scroll_340A4.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/bit_util.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cam_scroll_29B5C.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cam_scroll_340A4.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/cam_scroll_340A4.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[5/256] Building C object CMakeFiles/rayman.dir/src/collision/etat.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/collision/etat.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[6/256] Building C object CMakeFiles/rayman.dir/src/data/bonus_AABF8.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_343EC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/bonus_AABF8.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/corde.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_343EC.h:9:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[7/256] Building C object CMakeFiles/rayman.dir/src/bonus_343EC.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_343EC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_343EC.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/corde.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_343EC.h:9:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_343EC.c: In function ‘do_perfect_bonus’:
+/home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_343EC.c:25:13: warning: passing argument 2 of ‘sprintf’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   25 |             s_d__02d_8012a568,
+      |             ^~~~~~~~~~~~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:673:33: note: expected ‘char *’ but argument is of type ‘const u8 *’ {aka ‘const unsigned char *’}
+  673 | int sprintf(char *buffer, char *fmt, ...);
+      |                           ~~~~~~^~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_343EC.c:33:22: warning: passing argument 1 of ‘display_text’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   33 |         display_text(s_great__8012a578, 160, 80, 0, 4);
+      |                      ^~~~~~~~~~~~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:55:23: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘const u8 *’ {aka ‘const unsigned char *’}
+   55 | void display_text(u8 *text, s16 in_x, s16 in_y, u8 font_size, u8 param_5);
+      |                   ~~~~^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_343EC.c:34:22: warning: passing argument 1 of ‘display_text’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   34 |         display_text(s_your_time_8012a584, 160, 130, 2, 0);
+      |                      ^~~~~~~~~~~~~~~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:55:23: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘const u8 *’ {aka ‘const unsigned char *’}
+   55 | void display_text(u8 *text, s16 in_x, s16 in_y, u8 font_size, u8 param_5);
+      |                   ~~~~^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_343EC.c:39:22: warning: passing argument 1 of ‘display_text’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+   39 |         display_text(s_perfect__8012a594, 160, 90, 0, 6);
+      |                      ^~~~~~~~~~~~~~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:55:23: note: expected ‘u8 *’ {aka ‘unsigned char *’} but argument is of type ‘const u8 *’ {aka ‘const unsigned char *’}
+   55 | void display_text(u8 *text, s16 in_x, s16 in_y, u8 font_size, u8 param_5);
+      |                   ~~~~^~~~
+[8/256] Building C object CMakeFiles/rayman.dir/src/bonus_35FB4.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_update.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_35FB4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_35FB4.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[9/256] Building C object CMakeFiles/rayman.dir/src/bonus_372E0.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_372E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/bonus_372E0.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/corde.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[10/256] Building C object CMakeFiles/rayman.dir/src/command_494FC.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_372E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/command_494FC.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[11/256] Building C object CMakeFiles/rayman.dir/src/cheats.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/common/display.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/cheats.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/snow.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:8:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[12/256] Building C object CMakeFiles/rayman.dir/src/card.c.o
+FAILED: [code=1] CMakeFiles/rayman.dir/src/card.c.o 
+/usr/bin/cc -D__psyz -I/home/paulo/PortWorks/rayman-ps1-decomp/include -I/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include -I/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyz/psyz/include -I/home/paulo/PortWorks/rayman-ps1-decomp/build_pc/build/sdl/include-revision -I/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyz/external/SDL/include -std=gnu99 -MD -MT CMakeFiles/rayman.dir/src/card.c.o -MF CMakeFiles/rayman.dir/src/card.c.o.d -o CMakeFiles/rayman.dir/src/card.c.o -c /home/paulo/PortWorks/rayman-ps1-decomp/src/card.c
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/common/display.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/fade.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:8:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c: In function ‘PS1_GetNbreFiles’:
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:232:38: error: invalid use of undefined type ‘struct DIRENTRY’
+  232 |             __builtin_memcpy(cur_file->name, cpy_src, sizeof(s_no_card_801cf030));
+      |                                      ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:233:21: error: increment of pointer to an incomplete type ‘struct DIRENTRY’
+  233 |             cur_file++;
+      |                     ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:244:38: error: invalid use of undefined type ‘struct DIRENTRY’
+  244 |             __builtin_memcpy(cur_file->name, cpy_src, sizeof(s_unformat_8012ac78));
+      |                                      ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:245:21: error: increment of pointer to an incomplete type ‘struct DIRENTRY’
+  245 |             cur_file++;
+      |                     ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:255:38: error: invalid use of undefined type ‘struct DIRENTRY’
+  255 |             __builtin_memcpy(cur_file->name, s_error_801cf038, sizeof(s_error_801cf038));
+      |                                      ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:256:21: error: increment of pointer to an incomplete type ‘struct DIRENTRY’
+  256 |             cur_file++;
+      |                     ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:268:25: error: increment of pointer to an incomplete type ‘struct DIRENTRY’
+  268 |                 in_files++;
+      |                         ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:250:5: warning: case label value is less than minimum value for type [-Wswitch-outside-range]
+  250 |     case -1:
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c: In function ‘PS1_CardFilenameChecksum’:
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:355:21: error: array type has incomplete element type ‘struct DIRENTRY’
+  355 |     struct DIRENTRY files[15];
+      |                     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c: In function ‘PS1_InitSaveRayAndFilenames’:
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:422:21: error: array type has incomplete element type ‘struct DIRENTRY’
+  422 |     struct DIRENTRY files[15];
+      |                     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:434:29: error: invalid use of undefined type ‘struct DIRENTRY’
+  434 |         if (strncmp(cur_file->name, s_BISLUS00005_8012aca8, 12) == 0)
+      |                             ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:436:50: error: invalid use of undefined type ‘struct DIRENTRY’
+  436 |             strncpy(save_ray[cnt2 + 1], &cur_file->name[12], 3);
+      |                                                  ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:438:58: error: invalid use of undefined type ‘struct DIRENTRY’
+  438 |             strncpy(&PS1_SaveFilenames[cnt2][5], cur_file->name, 21);
+      |                                                          ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c: In function ‘FUN_8016b2e8’:
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:582:21: error: array type has incomplete element type ‘struct DIRENTRY’
+  582 |     struct DIRENTRY files[15];
+      |                     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:594:29: error: invalid use of undefined type ‘struct DIRENTRY’
+  594 |         if (strncmp(cur_file->name, s_BISLUS00005_8012aca8, 12) == 0)
+      |                             ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:599:96: error: invalid use of undefined type ‘struct DIRENTRY’
+  599 |                 sprintf(param_3, s_bu02xss_8012ae38, param_1, s_BISLUS00005_8012aca8, &cur_file->name[12]);
+      |                                                                                                ^~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:599:34: warning: passing argument 2 of ‘sprintf’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  599 |                 sprintf(param_3, s_bu02xss_8012ae38, param_1, s_BISLUS00005_8012aca8, &cur_file->name[12]);
+      |                                  ^~~~~~~~~~~~~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:673:33: note: expected ‘char *’ but argument is of type ‘const u8 *’ {aka ‘const unsigned char *’}
+  673 | int sprintf(char *buffer, char *fmt, ...);
+      |                           ~~~~~~^~~
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c: In function ‘PS1_GetNbreSave3’:
+/home/paulo/PortWorks/rayman-ps1-decomp/src/card.c:776:21: error: array type has incomplete element type ‘struct DIRENTRY’
+  776 |     struct DIRENTRY files[15];
+      |                     ^~~~~
+[13/256] Building C object CMakeFiles/rayman.dir/src/boss.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_update.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/boss.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/boss.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[14/256] Building C object CMakeFiles/rayman.dir/src/collision/block_6E5E0.c.o
+FAILED: [code=1] CMakeFiles/rayman.dir/src/collision/block_6E5E0.c.o 
+/usr/bin/cc -D__psyz -I/home/paulo/PortWorks/rayman-ps1-decomp/include -I/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include -I/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyz/psyz/include -I/home/paulo/PortWorks/rayman-ps1-decomp/build_pc/build/sdl/include-revision -I/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyz/external/SDL/include -std=gnu99 -MD -MT CMakeFiles/rayman.dir/src/collision/block_6E5E0.c.o -MF CMakeFiles/rayman.dir/src/collision/block_6E5E0.c.o.d -o CMakeFiles/rayman.dir/src/collision/block_6E5E0.c.o -c /home/paulo/PortWorks/rayman-ps1-decomp/src/collision/block_6E5E0.c
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/bonus_372E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/collision/block_6E5E0.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+/tmp/cciFlNFF.s: Assembler messages:
+/tmp/cciFlNFF.s:197: Error: expected comma after "noreorder"
+/tmp/cciFlNFF.s:198: Error: expected comma after "noat"
+/tmp/cciFlNFF.s:199: Error: can't open asm/nonmatchings/collision/block_6E5E0/calc_typ_trav.s for reading: No such file or directory
+/tmp/cciFlNFF.s:200: Error: expected comma after "reorder"
+/tmp/cciFlNFF.s:201: Error: expected comma after "at"
+/tmp/cciFlNFF.s:866: Error: expected comma after "noreorder"
+/tmp/cciFlNFF.s:867: Error: expected comma after "noat"
+/tmp/cciFlNFF.s:868: Error: can't open asm/nonmatchings/collision/block_6E5E0/CALC_MOV_ON_BLOC.s for reading: No such file or directory
+/tmp/cciFlNFF.s:869: Error: expected comma after "reorder"
+/tmp/cciFlNFF.s:870: Error: expected comma after "at"
+[15/256] Building C object CMakeFiles/rayman.dir/src/collision/bit_util.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/bit_util.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/collision/bit_util.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[16/256] Building C object CMakeFiles/rayman.dir/src/command_56AF0.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_56AF0.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/command_56AF0.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[17/256] Building C object CMakeFiles/rayman.dir/src/data/cam_scroll_9E814.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/bit_util.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cam_scroll_29B5C.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/cam_scroll_9E814.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[18/256] Building C object CMakeFiles/rayman.dir/src/collision/block_22C84.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/collision/block_22C84.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[19/256] Building C object CMakeFiles/rayman.dir/src/data/card_AA81C.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/card_AA81C.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/common/display.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/fade.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:8:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+[20/256] Building C object CMakeFiles/rayman.dir/src/data/demo_9F448.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/common/display.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/fade.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/video.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/demo_9FD4.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/demo_9F448.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/unknown/48528.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/cymbal.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:15,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_update.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_30A64.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_548CC.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/fade.h:6:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[21/256] Building C object CMakeFiles/rayman.dir/src/data/cheats_AA8D8.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/common/display.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/cheats_AA8D8.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/snow.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:8:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[22/256] Building C object CMakeFiles/rayman.dir/src/data/collision/block_9E49C.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/collision/block_9E49C.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[23/256] Building C object CMakeFiles/rayman.dir/src/data/collision/collision_9E79C.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_update.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/collision/collision_9E79C.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[24/256] Building C object CMakeFiles/rayman.dir/src/data/cam_scroll_AA5FC.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/bit_util.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cam_scroll_29B5C.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/cam_scroll_AA5FC.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[25/256] Building C object CMakeFiles/rayman.dir/src/data/cheats_AA7C8.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/common/display.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/cheats.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/cheats_AA7C8.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_hud.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/snow.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:8:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[26/256] Building C object CMakeFiles/rayman.dir/src/data/command_A36B8.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_56AF0.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/command_A36B8.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[27/256] Building C object CMakeFiles/rayman.dir/src/data/collision/bit_util.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/sound.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_card_7C028.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_677C0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/mama_pirate.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/etat.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_22C84.h:11,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/bit_util.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/collision/bit_util.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_DA64.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/loading_794DC.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[28/256] Building C object CMakeFiles/rayman.dir/src/data/collision/collision_9D294.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_update.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/data/collision/collision_9D294.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+[29/256] Building C object CMakeFiles/rayman.dir/src/collision/collision.c.o
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGPU.H:67,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/world_map_95CC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_update.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/ray/ray_5D190.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/block_6E5E0.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stoneman_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/stonebomb.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/command_494FC.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/scorpion.h:12,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/moteur_init_end.h:8,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/num_level_36260.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/timers.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_update.h:7,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj/bateau_command.h:5,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/obj_init_kill.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/collision/collision.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/src/collision/collision.c:1:
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:380:5: warning: conflicting types for built-in function ‘ccos’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  380 | int ccos(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:1:1: note: ‘ccos’ is declared in header ‘<complex.h>’
+  +++ |+#include <complex.h>
+    1 | /*
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: warning: conflicting types for built-in function ‘csin’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  381 | int csin(int a);
+      |     ^~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:381:5: note: ‘csin’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: warning: conflicting types for built-in function ‘csqrt’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  383 | int csqrt(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:383:5: note: ‘csqrt’ is declared in header ‘<complex.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: warning: conflicting types for built-in function ‘catan’; expected ‘_Complex double(_Complex double)’ [-Wbuiltin-declaration-mismatch]
+  384 | int catan(int a);
+      |     ^~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/tools/psyq-3.0-converted/include/LIBGTE.H:384:5: note: ‘catan’ is declared in header ‘<complex.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/input_ED20.h:6,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/main_moteur.h:9,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/draw_14FF4.h:10,
+                 from /home/paulo/PortWorks/rayman-ps1-decomp/include/draw/text_18118.h:7:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:6:14: warning: conflicting types for built-in function ‘strncmp’; expected ‘int(const char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    6 | extern int   strncmp(const char *,const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:1:1: note: ‘strncmp’ is declared in header ‘<string.h>’
+  +++ |+#include <string.h>
+    1 | #ifndef _MISSING_STRINGS_H
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: warning: conflicting types for built-in function ‘strncpy’; expected ‘char *(char *, const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+    8 | extern char *strncpy(char *, const char *, int);
+      |              ^~~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:8:14: note: ‘strncpy’ is declared in header ‘<string.h>’
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: warning: conflicting types for built-in function ‘strlen’; expected ‘long unsigned int(const char *)’ [-Wbuiltin-declaration-mismatch]
+    9 | extern int   strlen (/* char * */);             /* To avoid conflicting */
+      |              ^~~~~~
+/home/paulo/PortWorks/rayman-ps1-decomp/include/psyq_3_0_missing/STRINGS.H:9:14: note: ‘strlen’ is declared in header ‘<string.h>’
+In file included from /home/paulo/PortWorks/rayman-ps1-decomp/include/menu/menu_7F4B4.h:11:
+/home/paulo/PortWorks/rayman-ps1-decomp/include/card.h:63:45: warning: ‘struct DIRENTRY’ declared inside parameter list will not be visible outside of this definition or declaration
+   63 | s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files);
+      |                                             ^~~~~~~~
+ninja: build stopped: subcommand failed.

@@ -6,7 +6,8 @@
 #include "common/rayevts.h"
 #include "common/level.h"
 #include "common/world_map.h"
-#include "MEMORY.H"
+#include <string.h>
+#include <strings.h>
 #include "moteur_update.h"
 #include "ray/ray_5D190.h"
 #include "gendoor.h"

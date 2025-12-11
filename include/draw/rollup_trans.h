@@ -3,7 +3,7 @@
 
 #include "common.h"
 #include "common/display.h"
-#include "LIBGPU.H"
+#include <libgpu.h>
 #include "draw/draw_548CC.h"
 
 /* .data */

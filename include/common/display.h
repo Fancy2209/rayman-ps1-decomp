@@ -2,7 +2,7 @@
 #define DISPLAY_H
 
 #include "common.h"
-#include "LIBGPU.H"
+#include <libgpu.h>
 
 typedef struct DRENVAndTile
 {

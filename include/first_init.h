@@ -2,8 +2,8 @@
 #define FIRST_INIT_H
 
 #include "common.h"
-#include "LIBGPU.H"
-#include "psyq_3_0_missing/LIBCD.H"
+#include <libgpu.h>
+// #include "psyq_3_0_missing/LIBCD.H"
 #include "draw/fade.h"
 #include "draw/rollup_trans.h"
 #include "unknown/7BB28.h"

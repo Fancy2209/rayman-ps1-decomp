@@ -3,8 +3,8 @@
 
 #include "common.h"
 #include "common/display.h"
-#include "LIBGTE.H"
-#include "psyq_3_0_missing/RAND.H"
+#include "libgte.h"
+// #include "psyq_3_0_missing/RAND.H"
 #include "main_moteur.h"
 #include "luciole.h"
 

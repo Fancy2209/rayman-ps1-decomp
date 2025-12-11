@@ -4,8 +4,8 @@
 #include "common.h"
 #include "common/ray.h"
 #include "common/world_map.h"
-#include "LIBGPU.H"
-#include "STDIO.H"
+#include <libgpu.h>
+#include <stdio.h>
 #include "world_map_95CC.h"
 #include "timers.h"
 #include "draw/fade.h"

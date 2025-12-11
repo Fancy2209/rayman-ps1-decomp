@@ -2,7 +2,7 @@
 #define SYNCHRO_LOOP_H
 
 #include "common.h"
-#include "LIBGPU.H"
+#include <libgpu.h>
 #include "main_moteur.h"
 
 void FUN_801802d8(void);

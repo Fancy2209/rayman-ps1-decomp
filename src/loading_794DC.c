@@ -266,7 +266,7 @@ void LOAD_FND(void)
         no_fnd = PS1_BackgroundIndexTable[num_world - 1][num_level - 1];
         PS1_Disable_all_Callbacks();
         PS1_FileTemp = PS1_LoadFiles(PS1_FndFiles, no_fnd, 1, 0);
-        unk_1 = D_801E5260;
+        unk_1 = (u8 *)D_801E5260;
         D_801F4410 = unk_1;
         D_801F5160 = unk_1;
         D_801F8180 = &unk_1[D_801E5260[1]];

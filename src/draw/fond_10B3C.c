@@ -1,4 +1,5 @@
 #include "draw/fond_10B3C.h"
+#include <stdint.h>
 
 /* BinarySerializer.Ray1/DataTypes/PS1/Vignette */
 
@@ -171,7 +172,7 @@ void PS1_LoadFondDataAndPalettes(void)
     var_s1_1 = 0;
     while ((u32) (var_s1_1) < temp_t1)
     {
-        LoadClut((u32 *) temp_s0_12, 768, 503 - var_s1_1);
+        LoadClut((u_long *) temp_s0_12, 768, 503 - var_s1_1);
         var_s1_1 += 1;
         temp_s0_12 += 0x200;
     }
@@ -235,7 +236,7 @@ void PS1_LoadFond(void)
     if (i < PS1_FondImagesCount)
     {
         fi_count = PS1_FondImagesCount;
-        cur_dest = &PS1_FondImages[i];
+        cur_dest = (void**)&PS1_FondImages[i];
         inc = PS1_FondHeight << 7;
         while (i < fi_count)
         {
@@ -377,14 +378,14 @@ void FUN_80135d5c(s32 param_1, u16 *param_2, s32 param_3, s16 param_4)
             cur_sprt[0].y0 = sVar9;
             ppuVar3 = PS1_PrevPrim;
             cur_sprt[0].tag = cur_sprt[0].tag & 0xff000000 | *ppuVar3 & 0xffffff;
-            *ppuVar3 = (*ppuVar3 & 0xff000000 | (uint) &cur_sprt[0] & 0xffffff);
+            *ppuVar3 = (*ppuVar3 & 0xff000000 | (uintptr_t) &cur_sprt[0] & 0xffffff);
             if (fw_3 < sVar1_1)
             {
                 cur_sprt[0x10].x0 = param_4 + cur_sprt[0].x0;
                 cur_sprt[0x10].y0 = cur_sprt[0].y0;
-                new_var_1 = &cur_sprt[0x10].tag;
+                new_var_1 = (u32*)&cur_sprt[0x10].tag;
                 cur_sprt[0x10].tag = *new_var_1 & 0xff000000 | *ppuVar3 & 0xffffff;
-                *ppuVar3 = (*ppuVar3 & 0xff000000 | (uint) (&cur_sprt[0x10]) & 0xffffff);
+                *ppuVar3 = (*ppuVar3 & 0xff000000 | (uintptr_t) (&cur_sprt[0x10]) & 0xffffff);
             }
         }
         else
@@ -402,23 +403,23 @@ void FUN_80135d5c(s32 param_1, u16 *param_2, s32 param_3, s16 param_4)
             cur_sprt[0].y0 = sVar9;
             cur_sprt[0].tag = cur_sprt[0].tag & 0xff000000 | *ppuVar3 & 0xffffff;
             *ppuVar3 =
-                (*ppuVar3 & 0xff000000 | (uint) &cur_sprt[0] & 0xffffff);
+                (*ppuVar3 & 0xff000000 | (uintptr_t) &cur_sprt[0] & 0xffffff);
             if (fw_3 < sVar1_1)
             {
                 cur_sprt[0x10].x0 = cur_sprt[0].x0 + fw_1;
                 cur_sprt[0x10].y0 = cur_sprt[0].y0;
-                new_var_1 = &cur_sprt[0x10].tag;
+                new_var_1 = (u32*)&cur_sprt[0x10].tag;
                 cur_sprt[0x10].tag =
                     *new_var_1 & 0xff000000 | *ppuVar3 & 0xffffff;
                 *ppuVar3 =
-                    (*ppuVar3 & 0xff000000 | (uint) (&cur_sprt[0x10]) & 0xffffff);
+                    (*ppuVar3 & 0xff000000 | (uintptr_t) (&cur_sprt[0x10]) & 0xffffff);
                 if (fw_4 < sVar1_1)
                 {
                     cur_sprt[0x20].x0 = cur_sprt[0].x0 + fw_2;
                     cur_sprt[0x20].y0 = cur_sprt[0].y0;
                     cur_sprt[0x20].tag = cur_sprt[0x20].tag & 0xff000000 | *ppuVar3 & 0xffffff;
                     *ppuVar3 =
-                        (*ppuVar3 & 0xff000000 | (uint) (&cur_sprt[0x20]) & 0xffffff);
+                        (*ppuVar3 & 0xff000000 | (uintptr_t) (&cur_sprt[0x20]) & 0xffffff);
                 }
             }
         }
@@ -431,7 +432,7 @@ void FUN_80135d5c(s32 param_1, u16 *param_2, s32 param_3, s16 param_4)
         ppuVar3 = PS1_PrevPrim;
         bVar4 = NbSprite;
         cur_dr_env->tag = cur_dr_env->tag & 0xff000000 | *ppuVar3 & 0xffffff;
-        *ppuVar3 = (*ppuVar3 & 0xff000000 | (uint) cur_dr_env & 0xffffff);
+        *ppuVar3 = (*ppuVar3 & 0xff000000 | (uintptr_t) cur_dr_env & 0xffffff);
         cur_dr_env--;
     }
 }
@@ -842,7 +843,7 @@ void FUN_801366ac(void)
                 {
                     local_88.h = 0xF0 - (new_var2);
                 }
-                LoadImage(&local_88, &PS1_FondImages[temp_hi][((var_s3 + var_s6) << 7)]);
+                LoadImage(&local_88, (u_long *) &PS1_FondImages[temp_hi][((var_s3 + var_s6) << 7)]);
                 var_a0_2 = var_s5 + (var_s2 + (u16) local_88.h);
             }
             else
@@ -865,7 +866,7 @@ void FUN_801366ac(void)
                 {
                     local_88.h = 0x00F0;
                 }
-                LoadImage(&local_88, &PS1_FondImages[temp_hi][((var_s3 << 7))]);
+                LoadImage(&local_88, (u_long *) &PS1_FondImages[temp_hi][((var_s3 << 7))]);
             }
             if (var_s0_1 == 5)
             {
@@ -1121,7 +1122,7 @@ void DRAW_MAP(void)
     y_pos = -(new_var2 = ((((((ushort) ymap) << 0x10) >> 0x10) + ((((((ushort) ymap) << 0x10) >> 0x10) / 16) * (-0x10))) << 0x10) >> 0x10);
     iVar8 = (((ushort) ymap << 0x10) >> 0x14) * mp.width;
     test_2 = ((u16) xmap << 0x10) >> 0x14;
-    pSVar7 = PS1_CurrentDisplay->tiles;
+    pSVar7 = (SPRT_8 *)PS1_CurrentDisplay->tiles;
     while (y_pos < (PS1_CurrentDisplay->drawing_environment).clip.h)
     {
         tile_index = test_2 + iVar8;
@@ -1599,7 +1600,7 @@ void PS1_DisplayWorldMapBg2(s16 param_1, s16 param_2, s16 param_3, s16 param_4, 
         local_58.w = 0x40;
         local_58.h = param_5;
 
-        LoadImage(&local_58, (u32 *) &PS1_FondImages[(uVar9 + param_1 / 0x40) % PS1_FondImagesCount][param_2 << 7]);
+        LoadImage(&local_58, (u_long *) &PS1_FondImages[(uVar9 + param_1 / 0x40) % PS1_FondImagesCount][param_2 << 7]);
         if (uVar9 == 0)
         {
             local_58.x = PS1_CurrentDisplay->drawing_environment.clip.x + param_3 + var_s3;

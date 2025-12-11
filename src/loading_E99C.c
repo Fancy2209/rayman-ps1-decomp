@@ -1,4 +1,8 @@
 #include "loading_E99C.h"
+#include <libetc.h>
+#include <libsnd.h>
+extern void  SsUtReverbOff(void);
+extern short SsVabTransBody(unsigned char*, short);
 
 const u8 s_FILE_INFO_sd___801272a8[] = "FILE_INFO %s[%d] =\r\n{\r\n";
 const u8 s__s_void0x08x_void0x_801272c0[] = "\t{\"%s\", (void*)0x%08x, (void*)0x%08x, {{%d,%d,%d,%d},%ld,\"%s\"}},\r\n";
@@ -92,7 +96,7 @@ s32 PS1_LoadFiles(FileInfo *files, s32 file_index, s32 count, s16 param_4)
                     CdSync(0, null);
                     num_sectors = (files[i].file.size + 2047) >> 11;
                     CdControlB(CdlSetloc, &files[i].file.pos.minute, null);
-                    CdRead(num_sectors, (u32 *) files[i].dest, CdlModeSpeed);
+                    CdRead(num_sectors, (u_long *) files[i].dest, CdlModeSpeed);
                     while ((sectors_rem = CdReadSync(1, null)) > 0)
                     {
                         if (param_4 != 0)

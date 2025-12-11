@@ -45,7 +45,7 @@ void DO_MAIN_LOOP(void)
         new_disp_2 = &PS1_Displays[1];
     PS1_CurrentDisplay = new_disp_2;
 
-    ClearOTag((u_long *) PS1_CurrentDisplay->ordering_table, LEN(PS1_CurrentDisplay->ordering_table));
+    ClearOTag((OT_TYPE *) PS1_CurrentDisplay->ordering_table, LEN(PS1_CurrentDisplay->ordering_table));
     D_801E4BE0 = 0x19;
     D_801F4A28 = 0;
     PS1_Disp_Cur_Tile1 = 0;
@@ -125,7 +125,7 @@ void DO_MAIN_LOOP(void)
     DrawSync(0);
     if (PS1_MemoryUsageDisplayMode == 2)
         ClearImage(PTR_PS1_MemoryUsageRect_801cee70, 128, 0, 128);
-    DrawOTag((u_long *) PS1_CurrentDisplay->ordering_table);
+    DrawOTag((OT_TYPE *) PS1_CurrentDisplay->ordering_table);
     PS1_CheckPauseAndCheatInputs();
     if (dead_time != 64 && PS1_CanPlayDeathMusic)
     {

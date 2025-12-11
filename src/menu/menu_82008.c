@@ -313,7 +313,7 @@ void FUN_801a76e4(void)
 
     for (i = 0; i < (D_801F5498 + 2); i++)
     {
-        strcpy(&text_to_display[i], PS1_SettingStrings[i]);
+        strcpy((char *)&text_to_display[i], (const char *)PS1_SettingStrings[i]);
         seven = 7;
         if (i == seven)
         {

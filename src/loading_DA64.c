@@ -37,7 +37,7 @@ void FUN_80132304(u32 *data, u8 height)
 
     rect.x = 768; rect.y = 504;
     rect.w = 256; rect.h = height;
-    LoadImage(&rect, data);
+    LoadImage(&rect, (u_long *) data);
 }
 
 /* DB4C 8013234C -O2 -msoft-float */
@@ -84,7 +84,7 @@ void PS1_LoadLevelObjBlock(void)
 {
     __builtin_memcpy(&level, &PS1_LevelObjBlock[0], 8);
     __builtin_memcpy(D_801D7868, &PS1_LevelObjBlock[8], 8);
-    link_init = D_801D7868[0];
+    link_init = (u8*)D_801D7868[0];
 }
 
 /* E064 80132864 -O2 -msoft-float */
