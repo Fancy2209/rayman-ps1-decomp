@@ -16,3 +16,6 @@
 [submodule "tools/psyq-3.0-converted"]
 	path = tools/psyq-3.0-converted
 	url = https://github.com/fuerchter/psyq-3.0-converted
+[submodule "tools/psyz"]
+	path = tools/psyz
+	url = https://github.com/Fancy2209/psyz
