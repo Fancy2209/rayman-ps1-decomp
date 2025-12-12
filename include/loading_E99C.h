@@ -5,6 +5,7 @@
 #include "common/fileinfo.h"
 #include "common/world_map.h"
 #include <libsnd.h>
+#include <libetc.h>
 #include <stdio.h>
 // #include "psyq_3_0_missing/LIBETC.H"
 

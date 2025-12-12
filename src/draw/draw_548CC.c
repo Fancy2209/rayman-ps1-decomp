@@ -653,21 +653,22 @@ void DISPLAY_FOND_MENU(void)
 }
 #endif
 
+int GetGraphType(void); // temp
 /* 56A60 8017B260 -O2 -msoft-float */
 void FUN_8017b260(u16 param_1)
 {
-    //if (GetGraphType() != 0)
-    //{
-    //    D_801F8168 = (param_1 >> 9);
-    //    D_801F816C = (param_1 >> 7) & 3;
-    //    PS1_TPage_y = (param_1 << 3) & 768;
-    //    PS1_TPage_x = (param_1 << 6) & 1023;
-    //}
-    //else
-    //{
+    if (GetGraphType() != 0)
+    {
+        D_801F8168 = (param_1 >> 9);
+        D_801F816C = (param_1 >> 7) & 3;
+        PS1_TPage_y = (param_1 << 3) & 768;
+        PS1_TPage_x = (param_1 << 6) & 1023;
+    }
+    else
+    {
         D_801F8168 = (param_1 >> 7);
         D_801F816C = (param_1 >> 5) & 3;
         PS1_TPage_y = (param_1 << 4) & 256;
         PS1_TPage_x = (param_1 << 6) & 1023;
-    //}
+    }
 }

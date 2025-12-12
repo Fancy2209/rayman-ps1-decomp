@@ -73,7 +73,7 @@ CdlLOC D_801E4EF8;
 s32 D_801F4FA0;
 s16 D_801FA570;
 #endif
-#include <libsnd.h>
+// temp
 typedef void (*SsMarkCallbackProc)(short, short, short);
 extern void  SsVabClose(short);          
 extern void  SsEnd(void);
@@ -83,6 +83,7 @@ extern void  SsSeqPlay(short, char, short);
 extern void  SsSeqSetVol(short, short, short);  
 extern void  SsSeqSetCrescendo(short, short, long); 
 #define SSPLAY_PLAY 1
+// temp end
 
 /* B848 80130048 -O2 -msoft-float */
 void FUN_80130048(void)

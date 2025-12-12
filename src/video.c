@@ -1,4 +1,5 @@
 #include "video.h"
+// temp
 typedef	u_short DECDCTTAB[34816];
 
 /* DecDCTEnv */	
@@ -7,7 +8,6 @@ typedef struct {
 	u_char	iq_c[64];	/* IQ (Cb,Cr): zig-zag order */
 	short	dct[64];	/* IDCT coef (reserved) */
 } DECDCTENV;
-/* TODO: DecDCTout constant 1664? */
 extern void DecDCTReset(int mode);
 extern DECDCTENV *DecDCTGetEnv(DECDCTENV *env);
 extern DECDCTENV *DecDCTPutEnv(DECDCTENV *env);
@@ -23,6 +23,9 @@ extern int DecDCTinSync( int mode) ;
 extern int DecDCToutSync( int mode) ;
 extern int DecDCTinCallback(void (*func)());
 extern int DecDCToutCallback(void (*func)());
+// temp end
+
+/* TODO: DecDCTout constant 1664? */
 #ifdef BSS_DEFS
 VideoPlayState PS1_VideoPlayState;
 s16 PS1_VideoLength;
