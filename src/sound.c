@@ -40,23 +40,6 @@ Unk_801f62a0 pile_snd[10];
 s16 pt_pile_snd;
 SndFileInfo *D_801D7840;
 #endif
-// temp
-extern short SsUtKeyOn(short, short, short, short, short, short, short);
-extern short SsIsEos(short, short);
-extern void  SsSepStop(short, short);
-extern void  SsUtReverbOff(void);
-extern short SsVabOpenHead(unsigned char*, short);
-extern void  SsVabClose(short);          
-extern void  SsEnd(void);
-extern short SsSepOpen(unsigned long*, short, short);
-extern void  SsSepClose(short);
-extern void  SsSepSetVol(short, short, short, short);
-extern void  SsSeqCalledTbyT(void);           
-extern void  SsSepPlay(short, short, char, short);
-#define SSPLAY_PLAY 1
-extern void  SsUtAllKeyOff(short);
-extern short SsUtKeyOff(short, short, short, short, short);
-// temp end
 /* 41084 80165884 -O2 -msoft-float */
 void PS1_StopPlayingAllSnd(void)
 {

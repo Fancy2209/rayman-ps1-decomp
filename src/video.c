@@ -1,29 +1,11 @@
 #include "video.h"
-// temp
-typedef	u_short DECDCTTAB[34816];
-
-/* DecDCTEnv */	
-typedef struct {
-	u_char	iq_y[64];	/* IQ (Y): zig-zag order */
-	u_char	iq_c[64];	/* IQ (Cb,Cr): zig-zag order */
-	short	dct[64];	/* IDCT coef (reserved) */
-} DECDCTENV;
-extern void DecDCTReset(int mode);
-extern DECDCTENV *DecDCTGetEnv(DECDCTENV *env);
-extern DECDCTENV *DecDCTPutEnv(DECDCTENV *env);
-extern int DecDCTBufSize(u_long *bs);
+// Implemented in PsyZ but not in headers
 extern int DecDCTvlc(u_long *bs, u_long *buf);
-extern int DecDCTvlc2(u_long *bs, u_long *buf, DECDCTTAB table);
-extern int DecDCTvlcSize(int size);
-extern int DecDCTvlcSize2(int size);
-extern void DecDCTvlcBuild(u_short *table);
+
 extern void DecDCTin(u_long *buf, int mode);
 extern void DecDCTout(u_long *buf, int size);
-extern int DecDCTinSync( int mode) ;
-extern int DecDCToutSync( int mode) ;
 extern int DecDCTinCallback(void (*func)());
 extern int DecDCToutCallback(void (*func)());
-// temp end
 
 /* TODO: DecDCTout constant 1664? */
 #ifdef BSS_DEFS

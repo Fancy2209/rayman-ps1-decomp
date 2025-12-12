@@ -1,8 +1,4 @@
 #include "first_init.h"
-// temp
-extern void  SsInit(void);
-extern long StartPAD(void);
-// temp end
 
 const u8 s_loading_8012c368[] = "/loading.../";
 

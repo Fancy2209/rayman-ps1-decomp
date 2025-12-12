@@ -1,5 +1,4 @@
 #include "main.h"
-extern long StartPAD(void); // temp
 
 #ifdef BSS_DEFS
 u8 fin_du_jeu;

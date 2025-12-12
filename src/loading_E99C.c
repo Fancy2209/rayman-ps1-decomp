@@ -1,8 +1,4 @@
 #include "loading_E99C.h"
-// temp
-extern void  SsUtReverbOff(void);
-extern short SsVabTransBody(unsigned char*, short);
-// temp end
 
 const u8 s_FILE_INFO_sd___801272a8[] = "FILE_INFO %s[%d] =\r\n{\r\n";
 const u8 s__s_void0x08x_void0x_801272c0[] = "\t{\"%s\", (void*)0x%08x, (void*)0x%08x, {{%d,%d,%d,%d},%ld,\"%s\"}},\r\n";

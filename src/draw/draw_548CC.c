@@ -653,7 +653,7 @@ void DISPLAY_FOND_MENU(void)
 }
 #endif
 
-int GetGraphType(void); // temp
+int GetGraphType(void); // Implemented in PsyZ but not in headers
 /* 56A60 8017B260 -O2 -msoft-float */
 void FUN_8017b260(u16 param_1)
 {

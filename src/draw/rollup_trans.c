@@ -1,5 +1,4 @@
 #include "draw/rollup_trans.h"
-extern long AverageZ4(long sz0,long sz1,long sz2,long sz3); // temp
 
 #ifdef BSS_DEFS
 s16 PS1_RollUpPosition;

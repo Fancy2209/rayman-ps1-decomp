@@ -84,7 +84,8 @@ const u8 s_bu02xss_8012ae38[] = "bu%02x:%s%s";
 /* 45A7C 8016A27C -O2 -msoft-float */
 s32 PS1_InitPAD(void)
 {
-    InitPAD(PS1_PadReceiveBuffer, D_801CF01C, D_801F7F08, D_801CF020);
+    //InitPAD(PS1_PadReceiveBuffer, D_801CF01C, D_801F7F08, D_801CF020);
+    InitPAD(PS1_PadReceiveBuffer, D_801F7F08, D_801CF01C, D_801CF020);
     VSync(0);
     VSync(0);
     VSync(0);
