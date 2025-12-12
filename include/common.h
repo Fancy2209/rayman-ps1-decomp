@@ -7,8 +7,6 @@
 
 /*#define NUGGET*/
 #define MATCHES_BUT
-#define NONMATCHINGS
-#define BSS_DEFS
 
 #ifdef NUGGET
 #define BSS_DEFS

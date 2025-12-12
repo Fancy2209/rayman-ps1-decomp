@@ -267,6 +267,7 @@ add_executable(${PROJECT_NAME}
     src/world_map_95CC.c
 )
 
+target_compile_definitions(${PROJECT_NAME} PRIVATE NUGGET PLATFORM_PC)
 target_link_libraries(${PROJECT_NAME} PRIVATE psyz)
 target_include_directories(${PROJECT_NAME} PRIVATE include)
 target_include_directories(psyz PRIVATE src include tools/psyz/psyz/include)
