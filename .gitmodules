@@ -18,5 +18,4 @@
 	url = https://github.com/fuerchter/psyq-3.0-converted
 [submodule "tools/psyz"]
 	path = tools/psyz
-	url = https://github.com/Fancy2209/psyz
-	branch = rayman
+	url = https://github.com/Xeeynamo/psyz
