@@ -872,7 +872,7 @@ void FUN_8013b4d4(s16 x0, s16 y0)
 /* 16D44 8013B544 -O2 -msoft-float */
 void display_flocons_behind(void)
 {
-    u32 *ot_1;
+    OT_TYPE *ot_1;
     DR_ENV *dr_env;
     s16 prev_pcx; s16 prev_pcy;
     s16 cnt_1; s16 cnt_2; s16 cnt_3;
@@ -1012,7 +1012,7 @@ void display_flocons_behind(void)
 /* 173D0 8013BBD0 -O2 -msoft-float */
 void display_flocons_before(void)
 {
-    u32 *ot_7;
+    OT_TYPE *ot_7;
     DR_ENV *dr_env;
     s16 prev_pcx; s16 prev_pcy;
     s16 cnt_1; s16 cnt_2;

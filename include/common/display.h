@@ -17,7 +17,7 @@ typedef struct Display
     DR_ENV map_drawing_environment_primitives[25];
     u8 field_0x6b0_0x7d7[296]; /* unused? */
     u32 map_ordering_tables[6]; /* TODO: size correct? */
-    u32 ordering_table[11]; /* TODO: not sure this is correct, see compiler warnings for synchro_loop.c and main_moteur.c */
+    OT_TYPE ordering_table[11]; /* TODO: not sure this is correct, see compiler warnings for synchro_loop.c and main_moteur.c */
     SPRT_16 tiles[360];
     SPRT_8 field_0x1e9c_0x321b[312];
     TILE_1 tile1s[240];

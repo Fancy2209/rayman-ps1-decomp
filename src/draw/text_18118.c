@@ -556,7 +556,7 @@ void display_text(u8 *text, s16 in_x, s16 in_y, u8 font_size, u8 param_5)
                     break;
                 case 2:
                     sprite = &alpha.sprites[sprite_ind];
-                    sprite->clut = GetClut((clut_x * 0x10) + 0x300, 0x000001EC);
+                    sprite->clut = GetClut((clut_x * 0x10) + 0x300, 0x000001EC); // dies here
                     PS1_DrawSprite(sprite, (s16) unk_x, unk_y_2 - sprite->height, 0U);
                     break;
                 }
