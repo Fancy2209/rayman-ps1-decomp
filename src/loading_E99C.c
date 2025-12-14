@@ -88,8 +88,7 @@ s32 PS1_LoadFiles(FileInfo *files, s32 file_index, s32 count, s16 param_4)
         if (files[i].dest)
         {
 #if 1
-            uintptr_t base_addr = 0x80000000;
-            uintptr_t fixed_addr = (uintptr_t)files[i].dest - base_addr;
+            uintptr_t fixed_addr = (uintptr_t)file_ram+((uintptr_t)files[i].dest - 0x80000000);
             if(fixed_addr > 0) files[i].dest = (u8*)fixed_addr;
 #endif
             if (files[i].file.size != 0)
