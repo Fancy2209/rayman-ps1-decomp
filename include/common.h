@@ -4,6 +4,9 @@
 #include <psyz.h>
 #include "sys/types.h"
 #include "include_asm.h"
+#include <stdint.h>
+
+extern u8* file_ram;
 
 /*#define NUGGET*/
 #define MATCHES_BUT

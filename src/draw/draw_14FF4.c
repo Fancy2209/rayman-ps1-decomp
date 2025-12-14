@@ -30,9 +30,9 @@ void PS1_DrawColoredSprite(Sprite *sprite, s16 in_x, s16 in_y, u8 disp_mode)
     {
         offs = PS1_PolygonsCount * sizeof(POLY_FT4);
         if (PS1_CurrentDisplay != PS1_Displays)
-            poly = (POLY_FT4 *) (0x800E3F2C + offs);
+            poly = (POLY_FT4 *) (file_ram+0xE3F2C + offs);
         else
-            poly = (POLY_FT4 *) (0x800D772C + offs);
+            poly = (POLY_FT4 *) (file_ram+0xD772C + offs);
         SetPolyFT4(poly);
         PS1_PolygonsCount++;
     }

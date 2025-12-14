@@ -1,4 +1,6 @@
 #include "loading_E99C.h"
+#include <stdio.h>
+#include <string.h>
 
 const u8 s_FILE_INFO_sd___801272a8[] = "FILE_INFO %s[%d] =\r\n{\r\n";
 const u8 s__s_void0x08x_void0x_801272c0[] = "\t{\"%s\", (void*)0x%08x, (void*)0x%08x, {{%d,%d,%d,%d},%ld,\"%s\"}},\r\n";
@@ -85,8 +87,14 @@ s32 PS1_LoadFiles(FileInfo *files, s32 file_index, s32 count, s16 param_4)
         j = 10000;
         if (files[i].dest)
         {
+#if 1
+            uintptr_t base_addr = 0x80000000;
+            uintptr_t fixed_addr = (uintptr_t)files[i].dest - base_addr;
+            if(fixed_addr > 0) files[i].dest = (u8*)fixed_addr;
+#endif
             if (files[i].file.size != 0)
             {
+#if 0
                 for (j = 0; j < 10000; j++)
                 {
                     CdSync(0, null);
@@ -110,6 +118,39 @@ s32 PS1_LoadFiles(FileInfo *files, s32 file_index, s32 count, s16 param_4)
         }
         if (j == 10000)
             num_not_found++;
+        return num_not_found;
+#else
+                char buffer[1024];
+
+                // Step 1: Add . to the start
+                // Makes "\\RAY\\IMA\\VIG\\FND02.R16;1"
+                // into ".\\RAY\\IMA\\VIG\\FND02.R16;1"
+                buffer[0] = '.';
+                strcpy(buffer+1, files[i].path);
+
+                // Step 2: Replace '\\' by '/'
+                for (char *p = buffer; *p; ++p) {
+                    if (*p == '\\') {
+                        *p = '/';
+                    }
+                }
+
+                // Step 3: Remove ;1 since we aren't loading from disc
+                char *semicolon = strchr(buffer, ';');
+                if (semicolon) {
+                    *semicolon = '\0';
+                }
+
+                // Open file
+                FILE* fd = fopen(buffer, "rb");
+                if(fd == NULL) ++num_not_found;
+                else {
+                    fread(files[i].dest, 1, files[i].file.size, fd);
+                    fclose(fd);
+                }
+            }
+        }
+#endif
     }
     return num_not_found;
 }

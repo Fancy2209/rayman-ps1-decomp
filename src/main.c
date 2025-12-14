@@ -1,5 +1,7 @@
 #include "main.h"
 
+u8* file_ram;
+
 #ifdef BSS_DEFS
 u8 fin_du_jeu;
 #endif
@@ -12,6 +14,7 @@ void main(void)
     Display *new_disp;
     RaymanEvents default_evts = PS1_DefaultRayEvts;
 
+    file_ram = malloc(2*1024*1024);
     ResetCallback();
     _96_remove();
     D_801E4D48 = 0;
@@ -23,7 +26,7 @@ void main(void)
 
     StartPAD();
     ChangeClearPAD(0);
-    D_801F4380 = (u8 *) 0x8005866C;
+    D_801F4380 = (u8 *) file_ram+0x5866C;
     while (true)
     {
         if (menuEtape != 4)

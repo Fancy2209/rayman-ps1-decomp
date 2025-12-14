@@ -90,6 +90,6 @@ void PS1_LoadLevelObjBlock(void)
 /* E064 80132864 -O2 -msoft-float */
 void FUN_80132864(s16 param_1)
 {
-    PS1_LevelMapBlock = (s16 *) 0x80780000;
-    D_801F59E0 = D_801C4374[param_1 - 1];
+    PS1_LevelMapBlock = (s16 *) (file_ram+(0x80780000-0x80000000));
+    D_801F59E0 = (s32*)(file_ram+(uintptr_t)(D_801C4374[param_1 - 1] - (uintptr_t)0x80000000));
 }

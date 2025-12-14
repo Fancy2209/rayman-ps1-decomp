@@ -79,6 +79,8 @@ INCLUDE_ASM("asm/nonmatchings/video", PS1_PlayVideoFile);
 /* score of ??? */
 void PS1_PlayVideoFile(s16 video)
 {
+// No video decoding
+#if 0
     short sVar1;
     int iVar2;
     u32 *pbVar3;
@@ -157,6 +159,7 @@ void PS1_PlayVideoFile(s16 video)
     {
         readinput();
     }
+#endif
     return;
 }
 #endif
