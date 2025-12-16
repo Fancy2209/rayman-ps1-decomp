@@ -28,6 +28,7 @@ void PS1_LoadLevelMapBlock(MapData *data)
     data->height = D_801F8188;
     data->length = D_801D7A60;
     data->map = PS1_LevelMapBlock;
+    printf("data->map: %p\n", data->map);
 }
 
 /* DB04 80132304 -O2 -msoft-float */
@@ -81,12 +82,28 @@ void PS1_LoadAllFixData(void)
     __builtin_memcpy(&div_obj, cur, sizeof(Obj));
     cur += sizeof(Obj);
     mapobj = (Obj *) cur;
+
+    #ifdef USE_CUSTOM_FILE_HEAP
+    alpha.sprites = (Sprite *)FILE_HEAP(alpha.sprites);
+    alpha.img_buffer = FILE_HEAP(alpha.img_buffer);
+    alpha2.sprites = (Sprite *)FILE_HEAP(alpha2.sprites);
+    alpha2.img_buffer = FILE_HEAP(alpha2.img_buffer);
+    REMAP_OBJ(&ray);
+    REMAP_OBJ(&raylittle);
+    REMAP_OBJ(&clock_obj);
+    REMAP_OBJ(&div_obj);
+    REMAP_OBJ(mapobj);
+    #endif
 }
 
 /* DFEC 801327EC -O2 -msoft-float */
 void PS1_LoadLevelObjBlock(void)
 {
     __builtin_memcpy(&level, &PS1_LevelObjBlock[0], 8);
+#ifdef USE_CUSTOM_FILE_HEAP
+    level.objects = FILE_HEAP(level.objects);
+#endif
+
     __builtin_memcpy(D_801D7868, &PS1_LevelObjBlock[8], 8);
 #ifdef PLATFORM_PSYZ
     link_init = (u8*)D_801D7868[0];

@@ -489,4 +489,25 @@ typedef struct Obj
     ObjFlags flags;
 } Obj;
 
+#ifdef USE_CUSTOM_FILE_HEAP
+static inline void REMAP_OBJ(Obj *obj)
+{
+    obj->sprites = (Sprite *)FILE_HEAP((u32)obj->sprites);
+    obj->animations = (Animation *)FILE_HEAP((u32)obj->animations);
+    obj->img_buffer = FILE_HEAP((u32)obj->img_buffer);
+    obj->eta = (ObjState **)FILE_HEAP((u32)obj->eta);
+    obj->eta[0] = (ObjState *)FILE_HEAP((u32)obj->eta[0]);
+    int num_eta = (((u32)obj->eta)-((u32)obj->eta[0])/4);
+    printf("num_eta: %i\n", num_eta);
+    for(int i = 1; i > num_eta; i++)
+        obj->eta[i] = (ObjState *)FILE_HEAP((u32)obj->eta[i]);
+
+    if(obj->cmds != NULL)
+        obj->cmds = FILE_HEAP((u32)obj->cmds);
+
+    if(obj->cmd_labels != NULL)
+        obj->cmd_labels = (s16 *)FILE_HEAP((u32)obj->cmd_labels);
+}
+#endif
+
 #endif

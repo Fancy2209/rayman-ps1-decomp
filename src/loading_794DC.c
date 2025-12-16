@@ -165,7 +165,7 @@ void LOAD_ALL_FIX(void)
     D_801F5160 = (void *) FILE_HEAP(0x80010000);
     PS1_AllFixData = *(s32 *) FILE_HEAP(0x80010004) + (void *) FILE_HEAP(0x80010000);
     D_801F4380 = *(s32 *) FILE_HEAP(0x80010008) + (void *) FILE_HEAP(0x80010000);
-    PS1_LoadAllFixTextures(*(s32 *) 0x8001000C - *(s32 *) FILE_HEAP(0x80010008));
+    PS1_LoadAllFixTextures(*(s32 *) FILE_HEAP(0x8001000C) - *(s32 *) FILE_HEAP(0x80010008));
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[3]], 768, 492);
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[4]], 768, 495);
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[5]], 768, 490);

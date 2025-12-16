@@ -27,7 +27,7 @@ void main(void)
 
     StartPAD();
     ChangeClearPAD(0);
-    D_801F4380 = (u8 *) 0x8005866C;
+    D_801F4380 = (u8 *) FILE_HEAP(0x8005866C);
     while (true)
     {
         if (menuEtape != 4)

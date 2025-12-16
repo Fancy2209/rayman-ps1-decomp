@@ -70,6 +70,10 @@ s32 FUN_801331a4(FileInfo *files, s32 count, s32 param_3)
     return num_not_found;
 }
 
+#ifdef USE_CUSTOM_FILE_HEAP
+extern u8 D_801D8B50[41616];
+extern u8 *D_801F4380;
+#endif
 /* EAB4 801332B4 -O2 -msoft-float */
 s32 PS1_LoadFiles(FileInfo *files, s32 file_index, s32 count, s16 param_4)
 {
@@ -90,8 +94,12 @@ s32 PS1_LoadFiles(FileInfo *files, s32 file_index, s32 count, s16 param_4)
         if (files[i].dest)
         {
 #ifdef USE_CUSTOM_FILE_HEAP
-            uintptr_t fixed_addr = (uintptr_t)FILE_HEAP(files[i].dest);
-            if(fixed_addr > 0) files[i].dest = (u8*)fixed_addr;
+            // These 2 don't need fixing
+            if(files[i].dest != &D_801D8B50[0] && files[i].dest != D_801F4380)
+            {
+                uintptr_t fixed_addr = (uintptr_t)FILE_HEAP(files[i].dest);
+                if(fixed_addr > 0) files[i].dest = (u8*)fixed_addr;
+            }
 #endif
             if (files[i].file.size != 0)
             {
