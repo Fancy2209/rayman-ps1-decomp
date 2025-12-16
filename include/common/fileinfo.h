@@ -2,7 +2,11 @@
 #define FILEINFO_H
 
 #include "common.h"
+#ifdef PLATFORM_PSYZ
+#include <libcd.h>
+#else
 #include "LIBCD.H"
+#endif
 
 typedef struct FileInfo
 {

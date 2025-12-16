@@ -4,6 +4,10 @@
 u8 fin_du_jeu;
 #endif
 
+#ifdef USE_CUSTOM_FILE_HEAP
+unsigned char file_heap[FILE_HEAP_SIZE];
+#endif
+
 /* B438 8012FC38 -O2 -msoft-float */
 /*extern s32 D_8005866C;*/ /* data from PS1_LoadFiles seems to end up in here */
 

@@ -91,6 +91,10 @@ void FUN_80139330(u32 param_1, s16 *param_2, s16 *param_3)
 }
 #endif
 
+#ifdef PLATFORM_PSYZ
+void PS1_LoadVRAMBlock(s16 start_page, s16 start_pos, s16 end_page, s16 end_pos, s16 unused, u8 *data);
+#endif
+
 /* 14BC8 801393C8 -O2 -msoft-float */
 void FUN_801393c8(s32 param_1)
 {

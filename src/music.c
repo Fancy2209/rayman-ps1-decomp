@@ -88,7 +88,11 @@ void FUN_80130048(void)
 }
 
 /* B8AC 801300AC -O2 -msoft-float */
+#ifdef PLATFORM_PSYZ
+void PS1_CdReadyCallback(u_char status, u_char *result)
+#else
 void PS1_CdReadyCallback(s32 status, u8 *result)
+#endif
 {
     PS1_Music_intr_datar = status;
     switch (status)
@@ -139,7 +143,11 @@ void PS1_CdReadyCallback(s32 status, u8 *result)
 }
 
 /* BB6C 8013036C -O2 -msoft-float */
+#ifdef PLATFORM_PSYZ
+void PS1_CdSyncCallback(u_char status, u_char *result)
+#else
 void PS1_CdSyncCallback(s32 status, u8 *result)
+#endif
 {
     PS1_Music_Complete_data++;
     PS1_Music_intr_compl = status;
@@ -840,5 +848,9 @@ void FUN_801321fc(void)
 /* DA44 80132244 -O2 -msoft-float */
 void FUN_80132244(void)
 {
+#ifdef PLATFORM_PSYZ
+    exit(0);
+#else
     exit();
+#endif
 }

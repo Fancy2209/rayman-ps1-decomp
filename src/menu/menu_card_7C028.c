@@ -223,7 +223,11 @@ void PS1_GetNbreSave1(void)
     else if (NBRE_SAVE < 3)
     {
         PS1_CardStringDisplayed = 5;
+#ifdef PLATFORM_PSYZ
+        PS1_itoa((s16) NBRE_SAVE, (u8*)&save_itoa, 5);
+#else
         PS1_itoa((s16) NBRE_SAVE, &save_itoa, 5);
+#endif
         PS1_CardStrings[PS1_CardStringDisplayed][6] = save_itoa;
         PS1_CardStrings[PS1_CardStringDisplayed][67] = save_itoa;
         if (NBRE_SAVE < 2)

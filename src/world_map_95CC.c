@@ -26,7 +26,11 @@ s16 select_level_prg(void)
 
     DISPLAY_FOND_SELECT();
     display_text(s_level_801cedf4, 100, 100, 0, colour);
+#ifdef PLATFORM_PSYZ
+    PS1_itoa(level_select, (u8 *)&num, 10);
+#else
     PS1_itoa(level_select, &num, 10);
+#endif
     display_text(num, 200, 100, 0, colour);
 
     if (rightjoy(0) && inter_select == 0)

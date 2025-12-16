@@ -2,8 +2,14 @@
 #define FOND_10B3C_H
 
 #include "common.h"
+#ifdef PLATFORM_PSYZ
+#include <libgpu.h>
+#include <string.h>
+#include <strings.h>
+#else
 #include "LIBGPU.H"
 #include "MEMORY.H"
+#endif
 #include "common/display.h"
 #include "common/obj.h"
 #include "common/rayconst.h"

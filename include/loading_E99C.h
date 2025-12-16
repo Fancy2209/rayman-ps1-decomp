@@ -4,9 +4,15 @@
 #include "common.h"
 #include "common/fileinfo.h"
 #include "common/world_map.h"
+#ifdef PLATFORM_PSYZ
+#include <libsnd.h>
+#include <libetc.h>
+#include <stdio.h>
+#else
 #include "LIBSND.H"
 #include "STDIO.H"
 #include "psyq_3_0_missing/LIBETC.H"
+#endif
 
 /* .data */
 extern u8 *D_801CEEEC;

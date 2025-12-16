@@ -30,9 +30,9 @@ void PS1_DrawColoredSprite(Sprite *sprite, s16 in_x, s16 in_y, u8 disp_mode)
     {
         offs = PS1_PolygonsCount * sizeof(POLY_FT4);
         if (PS1_CurrentDisplay != PS1_Displays)
-            poly = (POLY_FT4 *) (0x800E3F2C + offs);
+            poly = (POLY_FT4 *) (FILE_HEAP(0x800E3F2C) + offs);
         else
-            poly = (POLY_FT4 *) (0x800D772C + offs);
+            poly = (POLY_FT4 *) (FILE_HEAP(0x800D772C) + offs);
         SetPolyFT4(poly);
         PS1_PolygonsCount++;
     }
@@ -872,7 +872,7 @@ void FUN_8013b4d4(s16 x0, s16 y0)
 /* 16D44 8013B544 -O2 -msoft-float */
 void display_flocons_behind(void)
 {
-    u32 *ot_1;
+    OT_TYPE *ot_1;
     DR_ENV *dr_env;
     s16 prev_pcx; s16 prev_pcy;
     s16 cnt_1; s16 cnt_2; s16 cnt_3;
@@ -1012,7 +1012,7 @@ void display_flocons_behind(void)
 /* 173D0 8013BBD0 -O2 -msoft-float */
 void display_flocons_before(void)
 {
-    u32 *ot_7;
+    OT_TYPE *ot_7;
     DR_ENV *dr_env;
     s16 prev_pcx; s16 prev_pcy;
     s16 cnt_1; s16 cnt_2;

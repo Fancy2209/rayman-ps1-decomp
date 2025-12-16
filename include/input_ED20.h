@@ -82,10 +82,17 @@ s32 FUN_801336c4(s32 param_1);
 s32 FUN_80133714(s32 param_1);
 s32 FUN_80133764(s32 param_1);
 s32 FUN_801337b4(s32 param_1);
+#ifdef PLATFORM_PSYZ
+s16 but0pressed();
+s16 but1pressed();
+s16 but2pressed();
+s16 but3pressed();
+#else
 s32 but0pressed(s32 param_1);
 s32 but1pressed(s32 param_1);
 s32 but2pressed(s32 param_1);
 s32 but3pressed(s32 param_1);
+#endif
 s32 FUN_80133984(s32 param_1);
 s32 FUN_801339f4(s32 param_1);
 s32 PS1_IsInputtingCheatCode(s32 param_1);

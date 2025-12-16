@@ -6,7 +6,12 @@
 #include "common/rayevts.h"
 #include "common/level.h"
 #include "common/world_map.h"
+#ifdef PLATFORM_PSYZ
+#include <string.h>
+#include <strings.h>
+#else
 #include "MEMORY.H"
+#endif
 #include "moteur_update.h"
 #include "ray/ray_5D190.h"
 #include "gendoor.h"

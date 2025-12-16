@@ -37,7 +37,11 @@ void FUN_80132304(u32 *data, u8 height)
 
     rect.x = 768; rect.y = 504;
     rect.w = 256; rect.h = height;
+#ifdef PLATFORM_PSYZ
+    LoadImage(&rect, (u_long *) data);
+#else
     LoadImage(&rect, data);
+#endif
 }
 
 /* DB4C 8013234C -O2 -msoft-float */
@@ -84,12 +88,20 @@ void PS1_LoadLevelObjBlock(void)
 {
     __builtin_memcpy(&level, &PS1_LevelObjBlock[0], 8);
     __builtin_memcpy(D_801D7868, &PS1_LevelObjBlock[8], 8);
-    link_init = D_801D7868[0];
+#ifdef PLATFORM_PSYZ
+    link_init = (u8*)D_801D7868[0];
+#else
+    link_init = (u8*)D_801D7868[0];
+#endif
 }
 
 /* E064 80132864 -O2 -msoft-float */
 void FUN_80132864(s16 param_1)
 {
-    PS1_LevelMapBlock = (s16 *) 0x80780000;
-    D_801F59E0 = D_801C4374[param_1 - 1];
+    PS1_LevelMapBlock = (s16 *) (FILE_HEAP(0x80780000));
+#ifdef PLATFORM_PSYZ
+    D_801F59E0 = (s32 *)FILE_HEAP(D_801C4374[param_1 - 1]);
+#else
+    D_801F59E0 = FILE_HEAP(D_801C4374[param_1 - 1]);
+#endif
 }

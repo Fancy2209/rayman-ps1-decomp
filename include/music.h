@@ -2,6 +2,19 @@
 #define MUSIC_H
 
 #include "common.h"
+#ifdef PLATFORM_PSYZ
+#include <libcd.h>
+#include <libsnd.h>
+#include <libgpu.h>
+
+// These macros aren't in the headers for some reason
+#ifndef btoi
+#define btoi(b)		((b)/16*10 + (b)%16)		/* BCD to u_char */
+#endif
+#ifndef itob
+#define itob(i)		((i)/10*16 + (i)%10)		/* u_char to BCD */
+#endif
+#else
 #include "LIBCD.H"
 #include "LIBSND.H"
 #include "LIBGPU.H"
@@ -9,6 +22,7 @@
 #include "psyq_3_0_missing/STDLIB.H"
 #include "psyq_3_0_missing/LIBAPI.H"
 #include "psyq_3_0_missing/LIBETC.H"
+#endif
 #include "sound.h"
 #include "loading_794DC.h"
 
@@ -93,8 +107,13 @@ extern s32 D_801F4FA0;
 extern s16 D_801FA570;
 
 void FUN_80130048(void);
+#ifdef PLATFORM_PSYZ
+void PS1_CdReadyCallback(u_char status, u_char *result);
+void PS1_CdSyncCallback(u_char status, u_char *result);
+#else
 void PS1_CdReadyCallback(s32 status, u8 *result);
 void PS1_CdSyncCallback(s32 status, u8 *result);
+#endif
 void PS1_Mark_Callback(s16 access_num, s16 seq_num, s16 data);
 void FUN_8013045c(void);
 void PS1_SsSetSerialVolA(s16 vol);

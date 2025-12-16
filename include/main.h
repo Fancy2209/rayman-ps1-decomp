@@ -5,8 +5,10 @@
 #include "common/rayevts.h"
 #include "common/record.h"
 #include "common/fin_du_jeu.h"
+#ifndef PLATFORM_PSYZ
 #include "psyq_3_0_missing/LIBETC.H"
 #include "psyq_3_0_missing/LIBAPI.H"
+#endif
 #include "sound.h"
 #include "depart_dead.h"
 #include "unknown/2539C.h"

@@ -2,6 +2,7 @@ __pycache__/
 .vscode/
 asm/
 build/
+build_pc/
 expected/
 nonmatchings/
 SLUS-000.05

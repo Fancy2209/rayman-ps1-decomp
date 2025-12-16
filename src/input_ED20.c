@@ -126,7 +126,11 @@ s32 FUN_801337b4(s32 param_1)
 }
 
 /* F004 80133804 -O2 -msoft-float */
+#ifdef PLATFORM_PSYZ
+s16 but0pressed()
+#else
 s32 but0pressed(s32 param_1)
+#endif
 {
     s16 res;
 
@@ -143,7 +147,11 @@ s32 but0pressed(s32 param_1)
 }
 
 /* F064 80133864 -O2 -msoft-float */
+#ifdef PLATFORM_PSYZ
+s16 but1pressed()
+#else
 s32 but1pressed(s32 param_1)
+#endif
 {
     s16 res;
 
@@ -160,7 +168,11 @@ s32 but1pressed(s32 param_1)
 }
 
 /* F0C4 801338C4 -O2 -msoft-float */
+#ifdef PLATFORM_PSYZ
+s16 but2pressed()
+#else
 s32 but2pressed(s32 param_1)
+#endif
 {
     s16 res;
 
@@ -177,7 +189,11 @@ s32 but2pressed(s32 param_1)
 }
 
 /* F124 80133924 -O2 -msoft-float */
+#ifdef PLATFORM_PSYZ
+s16 but3pressed()
+#else
 s32 but3pressed(s32 param_1)
+#endif
 {
     s16 res;
 

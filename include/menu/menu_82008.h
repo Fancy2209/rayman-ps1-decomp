@@ -2,7 +2,11 @@
 #define MENU_82008_H
 
 #include "common.h"
+#ifdef PLATFORM_PSYZ
+#include <string.h>
+#else
 #include "psyq_3_0_missing/STRINGS.H"
+#endif
 #include "menu/menu_7EEE4.h"
 #include "menu/menu_7F4B4.h"
 

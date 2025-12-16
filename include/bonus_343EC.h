@@ -4,8 +4,13 @@
 #include "common.h"
 #include "common/ray.h"
 #include "common/world_map.h"
+#ifdef PLATFORM_PSYZ
+#include <libgpu.h>
+#include <stdio.h>
+#else
 #include "LIBGPU.H"
 #include "STDIO.H"
+#endif
 #include "world_map_95CC.h"
 #include "timers.h"
 #include "draw/fade.h"

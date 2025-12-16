@@ -3,7 +3,11 @@
 
 #include "common.h"
 #include "common/text_to_display.h"
+#ifdef PLATFORM_PSYZ
+#include <string.h>
+#else
 #include "psyq_3_0_missing/STRINGS.H"
+#endif
 #include "menu/menu_7EEE4.h"
 #include "draw/fade.h"
 #include "demo_7F2BC.h"

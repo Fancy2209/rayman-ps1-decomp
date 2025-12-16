@@ -4,9 +4,14 @@
 #include "common.h"
 #include "common/obj.h"
 #include "common/display.h"
+#ifdef PLATFORM_PSYZ
+#include "libgte.h"
+#include <stdlib.h>
+#else
 #include "LIBGTE.H"
 #include "RAND.H"
 #include "psyq_3_0_missing/RAND.H"
+#endif
 #include "main_moteur.h"
 #include "snow.h"
 #include "collision/proj.h"

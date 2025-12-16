@@ -8,6 +8,11 @@ INCLUDE_ASM("asm/nonmatchings/fond_5BD8C", FUN_8018058c);
 score of ???
 strange diff to target. functionally the same though
 */
+#ifdef PLATFORM_PSYZ
+#define POINTER_CAST (u_long*)
+#else
+#define POINTER_CAST
+#endif
 void FUN_8018058c(u32 *param_1, s32 param_2, s32 param_3, s16 x, s16 y, s16 h, s16 w)
 {
     RECT sp10;
@@ -32,7 +37,7 @@ void FUN_8018058c(u32 *param_1, s32 param_2, s32 param_3, s16 x, s16 y, s16 h, s
     sp10.y = (PS1_CurrentDisplay->drawing_environment).clip.y + y;
     sp10.w = w;
     sp10.h = h;
-    LoadImage(&sp10, param_1);
+    LoadImage(&sp10, POINTER_CAST param_1);
     sp18.x = 0;
     sp18.y = (PS1_CurrentDisplay->drawing_environment).clip.y;
     sp18.w = 0x140;
@@ -108,7 +113,7 @@ void FUN_80180804(u32 *param_1, s32 param_2, s32 param_3, s16 x, s16 y, s16 h, s
     sp10.y = y + (PS1_CurrentDisplay->drawing_environment).clip.y;
     sp10.w = w;
     sp10.h = h;
-    LoadImage(&sp10, param_1);
+    LoadImage(&sp10, POINTER_CAST param_1);
     sp18.x = 0;
     sp18.y = (PS1_CurrentDisplay->drawing_environment).clip.y;
     sp18.w = 0x280;

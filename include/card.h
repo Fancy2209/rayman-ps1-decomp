@@ -3,11 +3,23 @@
 
 #include "common.h"
 #include "common/rayevts.h"
+#ifdef PLATFORM_PSYZ
+#include <kernel.h>
+#include <sys/file.h>
+#else
 #include "KERNEL.H"
 #include "SYS/FILE.H"
+#endif
 #include "menu/menu_7F4B4.h"
 #include "input_ED20.h"
 #include "save.h"
+#ifdef PLATFORM_PSYZ
+#include <string.h>
+#include <stdio.h>
+#include <libapi.h>
+#include <libetc.h>
+#endif
+
 
 typedef struct CardFrame0
 {

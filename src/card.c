@@ -84,7 +84,11 @@ const u8 s_bu02xss_8012ae38[] = "bu%02x:%s%s";
 /* 45A7C 8016A27C -O2 -msoft-float */
 s32 PS1_InitPAD(void)
 {
+#ifdef PLATFORM_PSYZ
+    InitPAD(PS1_PadReceiveBuffer, D_801F7F08, D_801CF01C, D_801CF020);
+#else
     InitPAD(PS1_PadReceiveBuffer, D_801CF01C, D_801F7F08, D_801CF020);
+#endif
     VSync(0);
     VSync(0);
     VSync(0);
@@ -218,8 +222,13 @@ s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files)
     s32 unk_1;
     s32 unk_2;
 
+#ifdef PLATFORM_PSYZ
+    strcpy((char *)filename, (const char *)name_start);
+    strcat((char *)filename, (const char *)s__801cf02c);
+#else
     strcpy(filename, name_start);
     strcat(filename, s__801cf02c);
+#endif
 
     switch (PS1_TestCard(0))
     {
@@ -288,8 +297,13 @@ s32 PS1_GetNbreFiles(u8 *name_start, struct DIRENTRY *in_files)
     struct DIRENTRY *var_s0;
     u16 test_1;
 
+#ifdef PLATFORM_PSYZ
+    strcpy((char *)sp10, (const char *)name_start);
+    strcat((char *)sp10, (const char *)s__801cf02c);
+#else
     strcpy(sp10, name_start);
     strcat(sp10, s__801cf02c);
+#endif
 
     switch (PS1_TestCard(0))
     {
@@ -613,10 +627,19 @@ s32 SaveGameOnDisk(u8 slot)
     if (res != 0)
     {
         PS1_CheckCardChanged();
+#ifdef PLATFORM_PSYZ
+        strcpy((char *)filename, (const char *)PS1_SaveFilenames[slot - 1]);
+#else
         strcpy(filename, PS1_SaveFilenames[slot - 1]);
+#endif
         if (filename[0] != '\0')
+#ifdef PLATFORM_PSYZ
+            erase (filename);
+        strncpy((char *)&PS1_SaveFilenames[slot - 1][17], (const char *)save_ray[slot], 3);
+#else
             delete (filename);
         strncpy(&PS1_SaveFilenames[slot - 1][17], save_ray[slot], 3);
+#endif
         res = (u8) PS1_WriteSave(0, slot);
     }
     return res;
@@ -760,7 +783,11 @@ void FUN_8016bbe4(void)
         PS1_CheckCardChanged();
         filename = PS1_SaveFilenames[fichier_selectionne - 1];
         if (filename[0] != '\0')
+#ifdef PLATFORM_PSYZ
+            erase (filename);
+#else
             delete (filename);
+#endif
         PS1_Checksum = PS1_CardFilenameChecksum(0);
         *save_ray[fichier_selectionne] = '\0';
         *PS1_SaveFilenames[fichier_selectionne - 1] = '\0';

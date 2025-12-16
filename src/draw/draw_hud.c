@@ -324,7 +324,11 @@ void display_time(s16 time)
         {
             __builtin_memcpy(text, s__801cef90, sizeof(s__801cef90));
             ray.flags &= ~FLG(OBJ_ACTIVE);
+#ifdef PLATFORM_PSYZ
+            PS1_itoa(nb_wiz, (u8*)&nb_wiz_text, 0xA);
+#else
             PS1_itoa(nb_wiz, &nb_wiz_text, 0xA);
+#endif
             strcat(text, nb_wiz_text);
             strcat(text, " tings to get/");
             if (horloge[8] < 4)
@@ -355,6 +359,11 @@ void display_time(s16 time)
     }
 }
 
+#ifdef PLATFORM_PSYZ
+#define IMAGE_CAST (u_long *)
+#else
+#define IMAGE_CAST
+#endif
 /* 1AC60 8013F460 -O2 */
 void PS1_LoadPts(void)
 {
@@ -377,31 +386,31 @@ void PS1_LoadPts(void)
 
     rect.w = 4;
     image[1] = 4; image[8] = 5;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 
     image[0] = 6; image[8] = 7; image[1] = 7; image[9] = 8;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
     
     image[0] = 0; image[17] = 6; image[10] = 6; image[8] = 6;
     image[1] = 6; image[9] = 8;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 
     image[10] = 2; image[1] = 2; image[17] = 3; image[8]= 3;
     image[2] = 4; image[9] = 5;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 
     image[8] = 0; image[1] = 0; image[11] = 2; image[2] = 2;
     image[18] = 3; image[9] = 3; image[3] = 3; image[25] = 4;
     image[16] = 4; image[10] = 4; image[17] = 5; image[24] = 6;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 
     image[3] = 0; image[24] = 0; image[26] = 6; image[25] = 6;
@@ -409,14 +418,14 @@ void PS1_LoadPts(void)
     image[2] = 6; image[1] = 6; image[18] = 7; image[17] = 7;
     image[10] = 7; image[9] = 7;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 
     image[26] = 6; image[25] = 6; image[19] = 6; image[16] = 6;
     image[11] = 6; image[8] = 6; image[2] = 6; image[1] = 6;
     image[18] = 8; image[17] = 8; image[10] = 8; image[9] = 8;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 
     image[8] = 0; image[1] = 0; image[43] = 6; image[42] = 6;
@@ -427,7 +436,7 @@ void PS1_LoadPts(void)
     image[35] = 8; image[34] = 8; image[28] = 8; image[27] = 8;
     image[26] = 8; image[25] = 8;
     rect.x = rect.x + rect.w;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
     i = 63;
     pixel_2 = image + i;
@@ -442,9 +451,10 @@ void PS1_LoadPts(void)
     image[8] = 12; image[1] = 12; image[26] = 80; image[25] = 80;
     image[19] = 80; image[16] = 80; image[11] = 80; image[2] = 80;
     image[9] = 14; image[18] = 9; image[17] = 10; image[10] = 10;
-    LoadImage(&rect, (u32 *)&image);
+    LoadImage(&rect, IMAGE_CAST&image);
     DrawSync(0);
 }
+#undef IMAGE_CAST
 
 /* modulo but no tge... */
 /* 1AFFC 8013F7FC -O2 */

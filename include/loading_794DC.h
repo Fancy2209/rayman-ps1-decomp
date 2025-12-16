@@ -3,7 +3,11 @@
 
 #include "common.h"
 #include "common/fileinfo.h"
+#ifdef PLATFORM_PSYZ
+#include <libgpu.h>
+#else
 #include "LIBGPU.H"
+#endif
 #include "loading_DA64.h"
 #include "loading_tex.h"
 #include "sound.h"

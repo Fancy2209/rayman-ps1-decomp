@@ -5,7 +5,11 @@
 #include "common/obj.h"
 #include "common/level.h"
 #include "common/ray.h"
+#ifdef PLATFORM_PSYZ
+#include <libsnd.h>
+#else
 #include "LIBSND.H"
+#endif
 #include "obj_update.h"
 #include "loading_794DC.h"
 #include "loading_E99C.h"

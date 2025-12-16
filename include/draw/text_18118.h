@@ -3,7 +3,11 @@
 
 #include "common.h"
 #include "common/text_to_display.h"
+#ifdef PLATFORM_PSYZ
+#include <libgpu.h>
+#else
 #include "LIBGPU.H"
+#endif
 #include "draw/draw_14FF4.h"
 #include "draw/draw_548CC.h"
 #include "text_24E10.h" /* TODO: circular? */

@@ -1,4 +1,16 @@
 #include "video.h"
+#ifdef PLATFORM_PSYZ
+// Implemented in PsyZ but not in headers
+extern int DecDCTvlc(u_long *bs, u_long *buf);
+
+extern void DecDCTin(u_long *buf, int mode);
+extern void DecDCTout(u_long *buf, int size);
+extern int DecDCTinCallback(void (*func)());
+extern int DecDCToutCallback(void (*func)());
+#define POINTER_CAST (u_long *)
+#else
+#define POINTER_CAST
+#endif
 
 /* TODO: DecDCTout constant 1664? */
 
@@ -42,11 +54,11 @@ void PS1_PlayVideo(Video video)
 /* E180 80132980 -O2 -msoft-float */
 void FUN_80132980(void)
 {
-    LoadImage(&PS1_CurrentVideoState.frame_rect, (u32 *) PS1_CurrentVideoState.decoded_frame);
+    LoadImage(&PS1_CurrentVideoState.frame_rect, POINTER_CAST PS1_CurrentVideoState.decoded_frame);
     DrawSync(0);
     PS1_CurrentVideoState.frame_rect.x += 16;
     if (PS1_CurrentVideoState.frame_rect.x < SCREEN_WIDTH)
-        DecDCTout(PS1_CurrentVideoState.decoded_frame, 1664);
+        DecDCTout(POINTER_CAST PS1_CurrentVideoState.decoded_frame, 1664);
     else
     {
         if (PS1_CurrentDisplay == &PS1_Displays[0])
@@ -73,6 +85,8 @@ INCLUDE_ASM("asm/nonmatchings/video", PS1_PlayVideoFile);
 /* score of ??? */
 void PS1_PlayVideoFile(s16 video)
 {
+// No video decoding on PsyZ, comment this out to prevent hangs
+#ifndef PLATFORM_PSYZ
     short sVar1;
     int iVar2;
     u32 *pbVar3;
@@ -102,8 +116,12 @@ void PS1_PlayVideoFile(s16 video)
         {
             readinput();
         }
+#ifdef PLATFORM_PSYZ
+        DecDCTout(POINTER_CAST PS1_CurrentVideoState.decoded_frame, 1664);
+#else
         DecDCTout((u32 *) PS1_CurrentVideoState.decoded_frame, 1664);
-        DecDCTin(PS1_CurrentVideoState.encoded_frame_buffers[PS1_CurrentVideoState.current_encode_buffer_index], 0);
+#endif
+        DecDCTin(POINTER_CAST PS1_CurrentVideoState.encoded_frame_buffers[PS1_CurrentVideoState.current_encode_buffer_index], 0);
 
         if (PS1_CurrentVideoState.current_encode_buffer_index)
         {
@@ -127,8 +145,13 @@ void PS1_PlayVideoFile(s16 video)
     SsSetSerialVol('\0', 0, 0);
     CdControlB('\t', (u_char *) 0x0, (u_char *) 0x0);
     PS1_CurrentVideoState.has_swapped_display = 0;
+#ifdef PLATFORM_PSYZ
+    DecDCTout(POINTER_CAST PS1_CurrentVideoState.decoded_frame, 1664);
+    DecDCTin(POINTER_CAST (&PS1_CurrentVideoState.encoded_frame_buffers[0])[PS1_CurrentVideoState.current_encode_buffer_index], 0);
+#else
     DecDCTout((u32 *) PS1_CurrentVideoState.decoded_frame, 1664);
     DecDCTin((u32 *) (&PS1_CurrentVideoState.encoded_frame_buffers[0])[PS1_CurrentVideoState.current_encode_buffer_index], 0);
+#endif
     do
     {
     } while (PS1_CurrentVideoState.has_swapped_display == 0);
@@ -151,6 +174,7 @@ void PS1_PlayVideoFile(s16 video)
     {
         readinput();
     }
+#endif
     return;
 }
 #endif
@@ -179,7 +203,11 @@ void PS1_LoadVideoFile(CdlLOC *lba, u32 param_2)
     CdlLOC unk_1;
 
     CdIntToPos(CdPosToInt(lba) + (param_2 - 5) * 10, &unk_1);
+#ifdef PLATFORM_PSYZ
+    StSetRing(POINTER_CAST D_801CEEE4, 32);
+#else
     StSetRing(D_801CEEE4, 32);
+#endif
     StSetStream(0, param_2, 0x0FFFFFFF, null, null);
     while (!CdControl(CdlSeekL, &unk_1.minute, null)) {};
     CdSync(1, null);
@@ -193,7 +221,11 @@ void PS1_ReadVideoFile(u32 *param_1, Video video)
     StHEADER *header;
     u8 vol;
 
+#ifdef PLATFORM_PSYZ
+    while (StGetNext((u_long **)&user_data, (u_long **) &header)) {}
+#else
     while (StGetNext(&user_data, (u32 **) &header)) {}
+#endif
     PS1_CurrentVideoState.frame_count = header->frameCount;
 
     if (video == VIDEO_PRES)
@@ -204,8 +236,13 @@ void PS1_ReadVideoFile(u32 *param_1, Video video)
         SsSetSerialVol(SS_SERIAL_A, vol, vol);
     }
 
+#ifdef PLATFORM_PSYZ
+    DecDCTvlc(POINTER_CAST user_data, POINTER_CAST param_1);
+    StFreeRing(POINTER_CAST user_data);
+#else
     DecDCTvlc(user_data, param_1);
     StFreeRing(user_data);
+#endif
 }
 
 /* E78C 80132F8C -O2 -msoft-float */

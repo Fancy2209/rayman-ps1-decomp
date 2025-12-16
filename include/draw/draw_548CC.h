@@ -3,8 +3,12 @@
 
 #include "common.h"
 #include "common/display.h"
+#ifdef PLATFORM_PSYZ
+#include "libgte.h"
+#else
 #include "LIBGTE.H"
 #include "psyq_3_0_missing/RAND.H"
+#endif
 #include "main_moteur.h"
 #include "luciole.h"
 

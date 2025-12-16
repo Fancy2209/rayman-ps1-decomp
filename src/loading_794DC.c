@@ -144,9 +144,9 @@ void LOAD_BIG_RAYMAN(void)
 {
     u8 *unk_1 = D_801F4380;
     PS1_FileTemp = PS1_LoadFiles(PS1_IniFiles, 0, 1, 0);
-    D_801F4410 = (void *) 0x800D0000;
-    D_801F5160 = (void *) 0x800D0000;
-    D_801F7E90 = *(s32 *) 0x800D0004 + (void *) 0x800D0000;
+    D_801F4410 = (void *) FILE_HEAP(0x800D0000);
+    D_801F5160 = (void *) FILE_HEAP(0x800D0000);
+    D_801F7E90 = *(s32 *) FILE_HEAP(0x800D0004) + (void *) FILE_HEAP(0x800D0000);
     FUN_80132424();
     D_801F4380 = &D_801F4410[((s32 *) D_801F5160)[2]];
     FUN_801393c8(((s32 *) D_801F5160)[3] - ((s32 *) D_801F5160)[2]);
@@ -161,11 +161,11 @@ void LOAD_ALL_FIX(void)
 {
     u8 *unk_1 = D_801F4380;
     PS1_FileTemp = PS1_LoadFiles(PS1_FxsFiles, 0, 1, 0);
-    D_801F4410 = (void *) 0x80010000;
-    D_801F5160 = (void *) 0x80010000;
-    PS1_AllFixData = *(s32 *) 0x80010004 + (void *) 0x80010000;
-    D_801F4380 = *(s32 *) 0x80010008 + (void *) 0x80010000;
-    PS1_LoadAllFixTextures(*(s32 *) 0x8001000C - *(s32 *) 0x80010008);
+    D_801F4410 = (void *) FILE_HEAP(0x80010000);
+    D_801F5160 = (void *) FILE_HEAP(0x80010000);
+    PS1_AllFixData = *(s32 *) FILE_HEAP(0x80010004) + (void *) FILE_HEAP(0x80010000);
+    D_801F4380 = *(s32 *) FILE_HEAP(0x80010008) + (void *) FILE_HEAP(0x80010000);
+    PS1_LoadAllFixTextures(*(s32 *) 0x8001000C - *(s32 *) FILE_HEAP(0x80010008));
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[3]], 768, 492);
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[4]], 768, 495);
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[5]], 768, 490);
@@ -182,12 +182,12 @@ void load_world(s16 world)
 {
     PS1_Disable_all_Callbacks();
     PS1_FileTemp = PS1_LoadFiles(&PS1_WldFiles[world - 1], 0, 1, 0);
-    D_801F4410 = (void *) 0x8005866C;
-    D_801F5160 = (void *) 0x8005866C;
-    D_801D7840 = *(s32 *) 0x80058674 + (void *) 0x8005866C;
-    D_801F4380 = *(s32 *) 0x80058678 + (void *) 0x8005866C;
-    D_801F8190 = *(s32 *) 0x80058684 + (void *) 0x8005866C;
-    FUN_8013948c(*(s32 *) 0x8005867C - *(s32 *) 0x80058678);
+    D_801F4410 = (void *) FILE_HEAP(0x8005866C);
+    D_801F5160 = (void *) FILE_HEAP(0x8005866C);
+    D_801D7840 = *(s32 *) FILE_HEAP(0x80058674) + (void *) FILE_HEAP(0x8005866C);
+    D_801F4380 = *(s32 *) FILE_HEAP(0x80058678) + (void *) FILE_HEAP(0x8005866C);
+    D_801F8190 = *(s32 *) FILE_HEAP(0x80058684) + (void *) FILE_HEAP(0x8005866C);
+    FUN_8013948c(*(s32 *) FILE_HEAP(0x8005867C) - *(s32 *) FILE_HEAP(0x80058678));
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[4]], 768, 490);
     LoadClut(&D_801F4410[((s32 *) D_801F5160)[5]], 768, 491);
     FUN_80139688(((s32 *) D_801F5160)[7] - ((s32 *) D_801F5160)[6]);
@@ -198,8 +198,14 @@ void load_world(s16 world)
     D_801CEE9C = world;
     D_801CEE9A = 0;
     no_fnd = -1;
+
+#ifdef PLATFORM_PSYZ
+    D_801E5260 = (s32 *) FILE_HEAP(D_801C438C[world - 1]);
+    D_801F59E0 = (s32 *) FILE_HEAP(D_801C4374[world - 1]);
+#else
     D_801E5260 = D_801C438C[world - 1];
     D_801F59E0 = D_801C4374[world - 1];
+#endif
     PS1_LoadWorldSound(world);
 }
 
@@ -266,7 +272,11 @@ void LOAD_FND(void)
         no_fnd = PS1_BackgroundIndexTable[num_world - 1][num_level - 1];
         PS1_Disable_all_Callbacks();
         PS1_FileTemp = PS1_LoadFiles(PS1_FndFiles, no_fnd, 1, 0);
+#ifdef PLATFORM_PSYZ
+        unk_1 = (u8*) D_801E5260;
+#else
         unk_1 = D_801E5260;
+#endif
         D_801F4410 = unk_1;
         D_801F5160 = unk_1;
         D_801F8180 = &unk_1[D_801E5260[1]];
@@ -309,8 +319,8 @@ void PS1_LoadFont(void)
 /* 7A094 8019E894 -O2 -msoft-float */
 void LOAD_SCREEN(void)
 {
-    D_801F4380 = (void *) 0x8005866C;
-    PS1_LdrFiles[0].dest = (void *) 0x8005866C;
+    D_801F4380 = (void *) FILE_HEAP(0x8005866C);
+    PS1_LdrFiles[0].dest = (void *) FILE_HEAP(0x8005866C);
     PS1_Disable_all_Callbacks();
     PS1_FileTemp = PS1_LoadFiles(PS1_LdrFiles, 0, 1, 0);
     plan2_width = 640;
@@ -322,8 +332,8 @@ void LOAD_SCREEN(void)
 /* 7A114 8019E914 -O2 -msoft-float */
 void FUN_8019e914(void)
 {
-    D_801F4380 = (void *) 0x8005866C;
-    PS1_LdrFiles[1].dest = (void *) 0x8005866C;
+    D_801F4380 = (void *) FILE_HEAP(0x8005866C);
+    PS1_LdrFiles[1].dest = (void *) FILE_HEAP(0x8005866C);
     PS1_Disable_all_Callbacks();
     PS1_FileTemp = PS1_LoadFiles(PS1_LdrFiles, 1, 1, 0);
     plan2_width = 279;
@@ -404,8 +414,8 @@ s16 FUN_8019ebc0(void)
         switch (Etape_History)
         {
         case 1:
-            D_801F4380 = (void *) 0x8005866C;
-            PS1_PreFiles[0].dest = (void *) 0x8005866C;
+            D_801F4380 = (void *) FILE_HEAP(0x8005866C);
+            PS1_PreFiles[0].dest = (void *) FILE_HEAP(0x8005866C);
             PS1_FileTemp = PS1_LoadFiles(PS1_PreFiles, 0, 1, 0);
             D_801F4380 += 0x19000;
             PS1_PreFiles[1].dest = D_801F4380;
@@ -419,7 +429,7 @@ s16 FUN_8019ebc0(void)
             D_801F4380 += 0x19000;
             PS1_PreFiles[4].dest = D_801F4380;
             PS1_FileTemp = PS1_LoadFiles(PS1_PreFiles, 4, 1, 0);
-            D_801F4380 = (void *) 0x8005866C;
+            D_801F4380 = (void *) FILE_HEAP(0x8005866C);
             plan2_width = 254;
             plan2_height = 180;
             D_801E4B58 = false;
@@ -457,8 +467,8 @@ s16 FUN_8019ebc0(void)
     }
     else
     {
-        D_801F4380 = (void *) 0x8005866C;
-        PS1_PreFiles[4].dest = (void *) 0x8005866C;
+        D_801F4380 = (void *) FILE_HEAP(0x8005866C);
+        PS1_PreFiles[4].dest = (void *) FILE_HEAP(0x8005866C);
         PS1_FileTemp = PS1_LoadFiles(PS1_PreFiles, 4, 1, 0);
         plan2_width = 146;
         plan2_height = 150;
@@ -474,8 +484,8 @@ void LOAD_CREDITS_VIGNET(void)
     switch (display_Vignet)
     {
     case 0:
-        D_801F4380 = (void *) 0x8005866C;
-        PS1_CrdFiles[0].dest = (void *) 0x8005866C;
+        D_801F4380 = (void *) FILE_HEAP(0x8005866C);
+        PS1_CrdFiles[0].dest = (void *) FILE_HEAP(0x8005866C);
         PS1_FileTemp = PS1_LoadFiles(PS1_CrdFiles, 0, 1, 0);
         D_801F4380 += 0x15800;
         PS1_CrdFiles[1].dest = D_801F4380;
@@ -492,7 +502,7 @@ void LOAD_CREDITS_VIGNET(void)
         D_801F4380 += 0x15800;
         PS1_CrdFiles[5].dest = D_801F4380;
         PS1_FileTemp = PS1_LoadFiles(PS1_CrdFiles, 5, 1, 0);
-        D_801F4380 = (void *) 0x8005866C;
+        D_801F4380 = (void *) FILE_HEAP(0x8005866C);
         plan2_width = 206;
         plan2_height = 200;
         D_801E4B58 = false;

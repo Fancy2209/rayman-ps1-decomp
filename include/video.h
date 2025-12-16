@@ -2,10 +2,15 @@
 #define VIDEO_H
 
 #include "common.h"
+#ifdef PLATFORM_PSYZ
+#include <libcd.h>
+#include <libpress.h>
+#else
 #include "LIBCD.H"
 #include "psyq_3_0_missing/LIBCD.H"
 #include "LIBPRESS.H"
 #include "psyq_3_0_missing/LIBPRESS.H"
+#endif
 #include "draw/fade.h"
 
 typedef s16 Video;
