@@ -467,13 +467,13 @@ void FUN_8013613c(u8 param_1, u32 param_2, u8 param_3, u32 param_4)
 {
     u8 bVar1;
     int iVar2;
-    uint uVar3;
+    u32 uVar3;
     short sVar4;
     u8 bVar5;
     int iVar6;
     u8 uVar7;
     RECT local_48;
-    uint local_40;
+    u32 local_40;
     int local_38;
     int local_30;
     s16 test_1;
@@ -546,11 +546,11 @@ void FUN_80136340(u16 *param_1, u32 param_2)
 {
     short sVar1;
     u16 bVar5;
-    uint uVar10;
+    u32 uVar10;
     int iVar11;
     RECT fp10;
     u16 fp20;
-    uint fp28;
+    u32 fp28;
     int fp38;
     u16 var_a2;
     u32 test_1;
@@ -1136,7 +1136,7 @@ void DRAW_MAP(void)
     int y_pos;
     u32 puVar5;
     int tile_index;
-    uint uVar6;
+    u32 uVar6;
     SPRT_8 *puVar7;
     int x_pos;
     SPRT_8 *p;

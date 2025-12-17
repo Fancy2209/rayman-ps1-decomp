@@ -5,7 +5,9 @@
 #include "common/rayevts.h"
 #ifdef PLATFORM_PSYZ
 #include <kernel.h>
+#if !(defined(_MSC_VER) || defined(__MINGW32__))
 #include <sys/file.h>
+#endif
 #else
 #include "KERNEL.H"
 #include "SYS/FILE.H"

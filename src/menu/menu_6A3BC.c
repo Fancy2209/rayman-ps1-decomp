@@ -448,7 +448,7 @@ const u8 s_to_light_up_the_dark_8012bbdc[] = "/to light up the dark/";
 const u8 s_rayman_please_help_me_hurry_8012bbf4[] = "/rayman please help me! hurry!/";
 
 /* 6B6A0 8018FEA0 -O2 -msoft-float */
-/*void Deter_Option_Caract(char *param_1,short param_2,uint param_3);
+/*void Deter_Option_Caract(char *param_1,short param_2,u32 param_3);
 void start_cd_suspence(void);*/
 
 void INIT_VIGNET(void)

@@ -5,7 +5,9 @@
 #ifdef PLATFORM_PSYZ
 #include <libgpu.h>
 #include <string.h>
+#if !(defined(_MSC_VER) || defined(__MINGW32__))
 #include <strings.h>
+#endif
 #else
 #include "LIBGPU.H"
 #include "MEMORY.H"

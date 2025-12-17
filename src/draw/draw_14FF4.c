@@ -1212,7 +1212,7 @@ void DISPLAY_ALL_OBJECTS(void)
     s16 iVar6;
     Obj *new_var4;
     ObjType obj_type;
-    uint uVar8;
+    u32 uVar8;
     short cnt_1;
     Obj *obj;
     s16 iVar10;

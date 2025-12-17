@@ -8,7 +8,9 @@
 #include "common/world_map.h"
 #ifdef PLATFORM_PSYZ
 #include <string.h>
+#if !(defined(_MSC_VER) || defined(__MINGW32__))
 #include <strings.h>
+#endif
 #else
 #include "MEMORY.H"
 #endif

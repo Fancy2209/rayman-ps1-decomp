@@ -840,7 +840,7 @@ void lance_couteau_lineaire(Obj *in_obj)
 #endif
 
 /* 28338 8014CB38 -O2 -msoft-float */
-/*int ashr16(ushort param_1,uint param_2);*/
+/*int ashr16(ushort param_1,u32 param_2);*/
 
 void DO_COU_COMMAND(Obj *obj)
 {
