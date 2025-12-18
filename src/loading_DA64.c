@@ -106,7 +106,7 @@ void PS1_LoadLevelObjBlock(void)
 #ifdef USE_CUSTOM_FILE_HEAP
     level.objects = (Obj*)FILE_HEAP(level.objects);
     for(int i = 0; i < level.nb_objects; i++)
-            REMAP_OBJ(&level.objects[i]);
+        REMAP_OBJ(&level.objects[i]);
 #endif
 
     __builtin_memcpy(D_801D7868, &PS1_LevelObjBlock[8], 8);
