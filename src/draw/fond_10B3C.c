@@ -1136,26 +1136,19 @@ void DRAW_MAP(void)
     int y_pos;
     u32 puVar5;
     int tile_index;
-    u32 uVar6;
-    SPRT_8 *puVar7;
+    uint uVar6;
     int x_pos;
-    SPRT_8 *p;
-    SPRT_8 *pSVar7;
-    int iVar8;
+    SPRT_16 *pSVar7;
+    s32 iVar8;
     s16 test_1;
-    u8 **new_var;
-    int new_var2;
+    s32 new_var2;
     s32 test_2;
 
     iVar4 = -(((((u16) xmap << 0x10) >> 0x10) + ((((u16) xmap << 0x10) >> 0x10) / 16) * -0x10) << 0x10 >> 0x10);
     y_pos = -(new_var2 = ((((((ushort) ymap) << 0x10) >> 0x10) + ((((((ushort) ymap) << 0x10) >> 0x10) / 16) * (-0x10))) << 0x10) >> 0x10);
     iVar8 = (((ushort) ymap << 0x10) >> 0x14) * mp.width;
     test_2 = ((u16) xmap << 0x10) >> 0x14;
-#ifdef PLATFORM_PSYZ
-    pSVar7 = (SPRT_8 *)PS1_CurrentDisplay->tiles;
-#else
     pSVar7 = PS1_CurrentDisplay->tiles;
-#endif
     while (y_pos < (PS1_CurrentDisplay->drawing_environment).clip.h)
     {
         tile_index = test_2 + iVar8;
@@ -1175,7 +1168,7 @@ void DRAW_MAP(void)
                 pSVar7->u0 = uVar1;
                 pSVar7->v0 = uVar2;
             /*new_var = PS1_CurrentDisplay->ordering_table;*/
-                AddPrim(PS1_CurrentDisplay->ordering_table + (test_1 - 6), pSVar7);
+                AddPrim(PS1_CurrentDisplay->ordering_table + (test_1) - 6, pSVar7);
                 pSVar7 = pSVar7 + 1;
             }
             x_pos = x_pos + 0x10;

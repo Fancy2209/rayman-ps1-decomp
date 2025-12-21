@@ -239,16 +239,19 @@ void PS1_RollUpTransition(s16 rollup_pos, s16 left_to_right)
     }
 }
 
+// PS1_RollUpTransition is broken on PsyZ right now
 /* 916C 8012D96C -O2 -msoft-float */
 s16 PS1_RollUpRToL(void)
 {
     CLRSCR();
+#ifndef PLATFORM_PSYZ
     if (PS1_RollUpPosition != 100)
     {
         PS1_RollUpTransition(PS1_RollUpPosition, false);
         PS1_RollUpPosition++;
         return false;
     }
+#endif
     return true;
 }
 
@@ -256,12 +259,14 @@ s16 PS1_RollUpRToL(void)
 s16 PS1_RollUpLToR(void)
 {
     CLRSCR();
+#ifndef PLATFORM_PSYZ
     if (PS1_RollUpPosition != 0)
     {
         PS1_RollUpTransition(PS1_RollUpPosition, true);
         PS1_RollUpPosition--;
         return false;
     }
+#endif
     return true;
 }
 
