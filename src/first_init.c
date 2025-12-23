@@ -48,12 +48,8 @@ void FUN_8019f8d0(void)
     playLevelMusic(0, 7);
     SetDispMask(1);
     SYNCHRO_LOOP(FUN_8019f848);
-    // This waits for the CDReady callback to be called,
-    // but it never is on PsyZ since we load files
-    // externally when using it currently
-#ifndef PLATFORM_PSYZ
+    // This waits for the CDReady callback to be called
     while (FUN_80131db8() == false) {};
-#endif
     DO_FADE_OUT();
 }
 #endif

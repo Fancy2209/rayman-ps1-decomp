@@ -16,6 +16,9 @@ void main(void)
     Display *new_disp;
     RaymanEvents default_evts = PS1_DefaultRayEvts;
 
+#ifdef PLATFORM_PSYZ
+    Psyz_SetDiskPath("rom.cue");
+#endif
     ResetCallback();
     _96_remove();
     D_801E4D48 = 0;
